@@ -1,0 +1,32 @@
+/*** Colors ***/
+
+:root {
+    --bg-color: #121212;
+    --bg-color-card: #FAFAFA;
+  
+    --text-color-primary: #ffffff;
+    --text-color-secondary: #7a7a7a;
+    --text-color-disabled: #E3E3E3;
+  
+    --primary-color: #D97708;
+    --secondary-color-blue: #148EFF;
+    --secondary-color-purple: #8e7cc3;
+    --secondary-color-green: #609A47;
+    --red: #ff1414;
+  
+    --border-color: #F2F2F2;
+  }
+
+/*** Basic structure ***/
+
+* {
+  background-color: var(--bg-color);
+}
+
+#title {
+  color: var(--text-color-primary);
+  text-align: center;
+  font-family: 'Waiting for the Sunrise', Arial, Helvetica, sans-serif;
+  font-size: 3rem;
+  letter-spacing: 5px;
+}
