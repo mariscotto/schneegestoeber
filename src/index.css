@@ -23,7 +23,7 @@ code {
   --text-color-secondary: #7a7a7a;
   --text-color-disabled: #E3E3E3;
 
-  --primary-color: #D97708;
+  --primary-color: #40a9bf;
   --secondary-color-blue: #148EFF;
   --secondary-color-purple: #8e7cc3;
   --secondary-color-green: #609A47;
@@ -44,4 +44,24 @@ text-align: center;
 font-family: 'Waiting for the Sunrise', Arial, Helvetica, sans-serif;
 font-size: 3rem;
 letter-spacing: 5px;
+}
+
+.character {
+  float: right;
+  margin-right:5%;
+  color: var(--text-color-primary);
+  border:none;
+  cursor: pointer;
+  letter-spacing: 0.5rem;
+  font-size: larger;
+  text-transform: uppercase;
+}
+
+.inspiration_dice {
+  float:left;
+  margin-left:5%;
+}
+
+input {
+  background-color: var(--text-color-primary)
 }
