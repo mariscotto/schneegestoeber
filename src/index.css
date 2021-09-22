@@ -29,6 +29,8 @@ code {
   --secondary-color-green: #609A47;
   --red: #ff1414;
 
+  --dp04: #262626;
+
   --border-color: #F2F2F2;
 }
 
@@ -38,12 +40,21 @@ code {
 background-color: var(--bg-color);
 }
 
+#grid{
+  display:grid;
+  margin:0.5% 2%;
+}
+
 #title {
 color: var(--text-color-primary);
 text-align: center;
 font-family: 'Waiting for the Sunrise', Arial, Helvetica, sans-serif;
 font-size: 3rem;
 letter-spacing: 5px;
+}
+
+.top_row {
+  position:relative;
 }
 
 .character {
@@ -63,5 +74,30 @@ letter-spacing: 5px;
 }
 
 input {
-  background-color: var(--text-color-primary)
+  background-color: var(--text-color-primary);
+  width:10%;
+  height: 20px;
+}
+
+.buttons{
+  height:20px;
+  vertical-align: middle;
+  margin:10px;
+}
+
+.tuer {
+  position:relative;
+  background-color: var(--dp04);
+  width:30vh;
+  height:30vh;
+  margin-top:30px;
+}
+
+h3 {
+  color: var(--text-color-primary);
+  font-family: Roboto;
+  letter-spacing: 4px;
+  background-color: var(--dp04);
+  text-align: left;
+  padding-left:20px;
 }
