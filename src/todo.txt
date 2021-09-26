@@ -1,0 +1,18 @@
+TODO
+
+Must Dos:
+- Story: Funktion Roll je nachdem anderer Text + Inspiration Dice Counter dynamic + warning inspiration dice at 0 + localstorage input
+- Encounter: Show encounter
+- Piecing everything together
+- Content
+
+
+Nice to haves:
+- scroll within card (fancy scrollbar)
+- back to top button
+
+
+Next year:
+- Smoother animation
+- responsive
+

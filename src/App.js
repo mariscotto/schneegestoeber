@@ -1,26 +1,24 @@
-import minus from "./img/minus.png";
-import plus from "./img/plus.png";
+import Calender from "./Calender.js";
+import TopRow from "./Top_row.js";
+import React, {useState} from 'react';
 import "./App.css";
 
 function App() {
+
+  var today = new Date(),
+  date =  today.getDate();
+  console.log(date);
+  
+
   return (
     <>
-    <div id="grid">
-      <h1 id="title">Schneegestöber</h1>
-
-      <div class="top_row">
-        <div class="inspiration_dice">
-          <img src={minus} alt="minus" class="buttons"></img>
-          <input type="number"></input>
-          <img src={plus}  alt="plus" class="buttons"></img>
-        </div>
-        <button class="character">character sheet</button>
+    <body>
+      <div id="grid">
+        <h1 id="title">Schneegestöber</h1>
+        <TopRow />
+        <Calender/>
       </div>
-
-      <div class="tuer">
-        <h3>1: The door</h3>
-      </div>
-      </div>
+      </body>
     </>
   );
 }
