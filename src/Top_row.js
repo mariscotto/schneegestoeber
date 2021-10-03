@@ -16,10 +16,10 @@ export default function Top_row() {
   console.log(counter);
 
   function onLoad(counter) {
-    if(counter==13) {
+    if(counter===13) {
       counter=12;
     }
-    if(counter==-1) {
+    if(counter===-1) {
       counter=0;
     }
     const a1 = counter + ".png";

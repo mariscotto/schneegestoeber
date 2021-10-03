@@ -144,7 +144,7 @@ input {
   margin-top:30px;
   border-radius: 10px 0 0 10px;
 
-  .icons, h3 >span  {
+  .icons, h3 >span, input  {
     display:none;
     transition: all 1 ease-in-out;
 /*     background-color: var(--bg_blue);
@@ -225,8 +225,10 @@ h3 {
   transform-origin: left;
   transition: all 1s ease-in-out;
 
-  *, .item {
+  *, .item, .roll {
     display:none;
+    color: var(--bg-color);
+    background-color: var(--bg-color);
   }
 }
 
