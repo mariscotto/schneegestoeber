@@ -1,31 +1,38 @@
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
 import minus from "./img/minus.png";
 import plus from "./img/plus.png";
 import line from "./img/line.png";
 import PDF from "./sheet.pdf";
+import UserContext from './Counter.js';
 
 export default function Top_row() {
-  const [counter, setCounter] = useState(1);
-  if (counter < 0) {
-    setCounter(0);
+
+  const counter=useContext(UserContext);
+
+  if (counter.count < 0) {
+    counter.count=0;
   }
 
-  if (counter > 12) {
-    setCounter(12);
+  if (counter.count > 12) {
+    counter.count = 12;
   }
-  console.log(counter);
+  console.log(counter.count);
 
-  function onLoad(counter) {
-    if(counter===13) {
-      counter=12;
+  function onLoad(counter2) {
+    if(counter2>12) {
+      counter.count=12;
     }
-    if(counter===-1) {
-      counter=0;
+    if(counter2<0) {
+      counter.count=0;
     }
-    const a1 = counter + ".png";
+    const a1 = counter.count + ".png";
     const image = document.getElementById("d20");
     image.src = a1;
     console.log(image.src);
+  }
+
+  function setCounter(countnew) {
+    counter.count=countnew;
   }
 
   return (
@@ -35,14 +42,14 @@ export default function Top_row() {
           src={minus}
           alt="minus"
           class="operation"
-          onClick={() => { setCounter(counter - 1);onLoad(counter-1);}}
+          onClick={() => { setCounter(counter.count - 1);onLoad(counter.count-1);}}
         ></img>
         <img src="1.png" alt="inspiration" class="inspiration" id="d20"></img>
         <img
           src={plus}
           alt="inspiration"
           class="operation"
-          onClick={() => {setCounter(counter + 1);onLoad(counter+1)}}
+          onClick={() => {setCounter(counter.count + 1);onLoad(counter.count+1)}}
         ></img>
       </div>
       <div class="character_link">

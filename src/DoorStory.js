@@ -16,6 +16,8 @@ class Roll extends Component {
     this.state = {
       content: "",
       numberrolled: "",
+      inspirationchecked:false,
+      nat20checked:false,
     };
   }
 
@@ -50,13 +52,13 @@ class Roll extends Component {
   }
 
   decreaseInsp(inspdice) {
-    if (inspdice === true) {
+    if (this.state.inspirationchecked === true) {
       console.log("descrease insp");
     }
   }
 
   increaseInsp(nat20) {
-    if (nat20 === true) {
+    if (this.state.nat20checked === true) {
       console.log("increase insp");
     }
   }
@@ -79,11 +81,13 @@ class Roll extends Component {
             />
           </div>
           <div class="rollCheck">
-            <input type="checkbox" id="inspiration1" class="checkbox" />
+            <input type="checkbox" id="inspiration1" class="checkbox" onChange={(event) =>
+                this.setState({ inspirationchecked: !this.state.inspirationchecked})}/>
             <label for="inspiration1">Inspiration dice</label>
           </div>
           <div class="rollCheck">
-            <input type="checkbox" id="nat201" class="checkbox" />
+            <input type="checkbox" id="nat201" class="checkbox" onChange={(event) =>
+                this.setState({ nat20checked: !this.state.nat20checked })}/>
             <label for="nat201">Nat 20</label>
           </div>
           <button
