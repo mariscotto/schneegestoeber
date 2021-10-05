@@ -1,5 +1,6 @@
-import React, { useState, Component } from "react";
+import React, { useState, Component, useContext } from "react";
 import story from "./img/story.png";
+import UserContext from './Counter.js';
 
 const contentadditional1 = "Test1: below or equal to 7";
 const contentadditional2 = "Test2: 7-12";
@@ -10,111 +11,63 @@ const contentmain = "Test";
 const title = "1: The door";
 const roll = "Dexterity saving throw";
 
-class Roll extends Component {
-  constructor() {
-    super();
-    this.state = {
-      content: "",
-      numberrolled: "",
-      inspirationchecked:false,
-      nat20checked:false,
-    };
-  }
 
-  changeContent(roll) {
+
+export default function Door() {
+  const [isActive, setActive] = useState("false");
+  const [content, setValue] = useState("");
+  const [numberrolled, setNumber] = useState("");
+  const [inspirationchecked, setInsp] = useState("");
+  const [nat20checked, setCheck] = useState("");
+  const counter=useContext(UserContext);
+
+  const handleToggle = () => {
+    setActive(!isActive);
+  };
+
+
+
+  function changeContent(roll) {
     if (roll < 7) {
       console.log("bad roll :( " + contentadditional1);
       let contentadditionalrolled = contentadditional1;
-      this.setState({
-        content: contentadditionalrolled,
-      });
+      setValue(contentadditionalrolled);
     } else if (roll > 6 && roll < 13) {
       console.log("better role :/ " + contentadditional2);
       let contentadditionalrolled = contentadditional2;
-      this.setState({
-        content: contentadditionalrolled,
-      });
+      setValue(contentadditionalrolled);
     } else if (roll > 12 && roll < 18) {
       console.log("good role :) " + contentadditional3);
       let contentadditionalrolled = contentadditional3;
-      this.setState({
-        content: contentadditionalrolled,
-      });
+      setValue(contentadditionalrolled);
     } else if (roll > 17) {
       console.log("awesome role :D " + contentadditional4);
       let contentadditionalrolled = contentadditional4;
-      this.setState({
-        content: contentadditionalrolled,
-      });
+      setValue(contentadditionalrolled);
     } else {
       return "";
     }
   }
 
-  decreaseInsp(inspdice) {
-    if (this.state.inspirationchecked === true) {
+  function decreaseInsp() {
+
+    if (inspirationchecked === true) {
       console.log("descrease insp");
+      counter.count = counter.count  - 1;
+      console.log("new counter! "+counter.count);
     }
-  }
-
-  increaseInsp(nat20) {
-    if (this.state.nat20checked === true) {
-      console.log("increase insp");
-    }
-  }
-
-  render() {
-    return (
-      <div>
-        <div class="roll">
-          <div class="rollDescription">
-            <p>Please make a {roll}:</p>
-            <input
-              type="number"
-              class="rollNumber"
-              min="-5"
-              max="30"
-              step="1"
-              onChange={(event) =>
-                this.setState({ numberrolled: event.target.value })
-              }
-            />
-          </div>
-          <div class="rollCheck">
-            <input type="checkbox" id="inspiration1" class="checkbox" onChange={(event) =>
-                this.setState({ inspirationchecked: !this.state.inspirationchecked})}/>
-            <label for="inspiration1">Inspiration dice</label>
-          </div>
-          <div class="rollCheck">
-            <input type="checkbox" id="nat201" class="checkbox" onChange={(event) =>
-                this.setState({ nat20checked: !this.state.nat20checked })}/>
-            <label for="nat201">Nat 20</label>
-          </div>
-          <button
-            type="button"
-            class="rollButton"
-            onClick={() => {
-              this.changeContent(this.state.numberrolled);
-              this.increaseInsp(true);
-              this.decreaseInsp(true);
-            }}
-          >
-            Enter
-          </button>
-        </div>
-
-        <p class="rollresult">{this.state.content}</p>
-      </div>
-    );
-  }
-}
-
-export default function Door() {
-  const [isActive, setActive] = useState("false");
-
-  const handleToggle = () => {
-    setActive(!isActive);
   };
+
+
+  function increaseInsp() {
+    if (nat20checked === true) {
+      console.log("increase insp");
+      counter.count = counter.count  +1;
+      console.log("new counter! "+counter.count);
+    }
+  }
+
+
   return (
     <div class="calender">
       <div className={isActive ? "door" : "doorOpen"} onClick={handleToggle}>
@@ -126,7 +79,42 @@ export default function Door() {
       </div>
       <div className={isActive ? "doorContentEmpty" : "doorContent"}>
         <p>{contentmain}</p>
-        <Roll />
+        <div>
+        <div class="roll">
+          <div class="rollDescription">
+            <p>Please make a {roll}:</p>
+            <input
+              type="number"
+              class="rollNumber"
+              min="-5"
+              max="30"
+              step="1"
+              onChange={(event) =>
+                setNumber(event.target.value)
+              }
+            />
+          </div>
+          <div class="rollCheck">
+            <input type="checkbox" id="inspiration1" class="checkbox" onChange={(event) =>
+                setInsp(!inspirationchecked)}/>
+            <label for="inspiration1">Inspiration dice</label>
+          </div>
+          <div class="rollCheck">
+            <input type="checkbox" id="nat201" class="checkbox" onChange={(event) =>
+                setCheck(!nat20checked )}/>
+            <label for="nat201">Nat 20</label>
+          </div>
+          <button
+            type="button"
+            class="rollButton"
+            onClick={() => { changeContent(numberrolled);increaseInsp();decreaseInsp()} }
+          >
+            Enter
+          </button>
+        </div>
+
+        <p class="rollresult">{content}</p>
+      </div>
       </div>
     </div>
   );
