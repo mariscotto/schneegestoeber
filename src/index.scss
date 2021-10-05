@@ -130,6 +130,10 @@ input {
   transform-origin: left;
   transition: all 0.5s ease-in-out;
   cursor:pointer;
+
+  .shorttitle {
+    display: none;
+  }
 }
 
 .doorOpen {
@@ -151,8 +155,11 @@ input {
     border-color: var(--bg_blue); */
   }
 
+  .shorttitle {
+    display: block;
+  }
+
   h3::after {
-    content:"1";
     transition: all 1 ease-in-out;
   }
 
@@ -320,7 +327,7 @@ h3 {
 
 // ENCOUNTER
 
-a {
-  color: var(--primary-color);
+.link {
+  color: var(--primary-color)!important;
   cursor: pointer;
 }

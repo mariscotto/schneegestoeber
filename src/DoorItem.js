@@ -5,6 +5,7 @@ export default function Door() {
 
     const contentmain ="Test"
     const title= "1: The door"
+    const shorttitle= "1"
     const image="item.png"
 
     const [isActive, setActive] = useState("false");
@@ -16,7 +17,10 @@ export default function Door() {
         <div class="calender">
             
         <div className={isActive ? "door": "doorOpen"} onClick={handleToggle}>
-          <h3 class="door_title"><span>{title}</span></h3>
+          <h3 class="door_title">
+          <span class="title">{title}</span>
+          <span class="shorttitle">{shorttitle}</span>
+          </h3>
           <hr class="separation"></hr>
           <img src={item} alt="item" class="icons"></img>
         </div>

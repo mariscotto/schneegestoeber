@@ -1,7 +1,7 @@
 import TopRow from "./Top_row.js";
 import React from "react";
 import "./App.css";
-import Door from './DoorStory.js';
+import Door from './DoorEncounter.js';
 import doordata from './doorconfig/doors.json';
 import UserContext from './Counter.js';
 

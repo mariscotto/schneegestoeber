@@ -1,9 +1,8 @@
 TODO
 
 Must Dos:
-- Story: Funktion Roll je nachdem anderer Text + Inspiration Dice Counter dynamic + warning inspiration dice at 0 + localstorage input
-- Encounter: Show encounter
-- Piecing everything together
+- Localstorage
+- Calender: Piecing everything together
 - Content
 
 
