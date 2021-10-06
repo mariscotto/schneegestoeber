@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/schneegestoeber/static/css/main.86e8f804.chunk.css",
+    "main.js": "/schneegestoeber/static/js/main.18a441fb.chunk.js",
+    "main.js.map": "/schneegestoeber/static/js/main.18a441fb.chunk.js.map",
+    "runtime-main.js": "/schneegestoeber/static/js/runtime-main.64a4682c.js",
+    "runtime-main.js.map": "/schneegestoeber/static/js/runtime-main.64a4682c.js.map",
+    "static/js/2.ed358625.chunk.js": "/schneegestoeber/static/js/2.ed358625.chunk.js",
+    "static/js/2.ed358625.chunk.js.map": "/schneegestoeber/static/js/2.ed358625.chunk.js.map",
+    "static/js/3.39b8898c.chunk.js": "/schneegestoeber/static/js/3.39b8898c.chunk.js",
+    "static/js/3.39b8898c.chunk.js.map": "/schneegestoeber/static/js/3.39b8898c.chunk.js.map",
+    "index.html": "/schneegestoeber/index.html",
+    "static/css/main.86e8f804.chunk.css.map": "/schneegestoeber/static/css/main.86e8f804.chunk.css.map",
+    "static/js/2.ed358625.chunk.js.LICENSE.txt": "/schneegestoeber/static/js/2.ed358625.chunk.js.LICENSE.txt",
+    "static/media/sheet.dabac165.pdf": "/schneegestoeber/static/media/sheet.dabac165.pdf"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.64a4682c.js",
+    "static/js/2.ed358625.chunk.js",
+    "static/css/main.86e8f804.chunk.css",
+    "static/js/main.18a441fb.chunk.js"
+  ]
+}
