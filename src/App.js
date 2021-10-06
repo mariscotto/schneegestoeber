@@ -1,7 +1,7 @@
 import TopRow from "./Top_row.js";
 import React from "react";
 import "./App.css";
-import Door from './DoorEncounter.js';
+import Door from './DoorStory.js';
 import doordata from './doorconfig/doors.json';
 import UserContext from './Counter.js';
 
@@ -24,7 +24,7 @@ function App() {
     <>
     <body>
       <div id="grid">
-        <h1 id="title">Schneegestöber</h1>
+        <h1 id="title">The blizzard</h1>
         <UserContext.Provider value={counter}>
         <TopRow/>
         <Door/>
