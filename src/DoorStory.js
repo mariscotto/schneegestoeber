@@ -1,4 +1,6 @@
-import React, { useState, useContext } from "react";
+/* import React, { useState, useContext } from "react";
+ */
+import React from "react";
 import story from "./img/story.png";
 import UserContext from './Counter.js';
 
@@ -29,9 +31,9 @@ export default function Door() {
   const [isActive, setActive] = useStickyState(false, 'isActivestore');
   const [content, setValue] =  useStickyState(null, 'contentstore');
   const [numberrolled, setNumber] =  useStickyState(null, 'numberrolledstore');
-  const [inspirationchecked, setInsp] =  useStickyState(null, 'inspirationcheckedstore');
-  const [nat20checked, setCheck] =  useStickyState(null, 'nat20checkedstore');
-  const counter=useContext(UserContext);
+  const [inspirationchecked, setInsp] =  useStickyState(false, 'inspirationcheckedstore');
+  const [nat20checked, setCheck] =  useStickyState(false, 'nat20checkedstore');
+  const counter=React.useContext(UserContext);
 
 
   const handleToggle = () => {
@@ -104,6 +106,25 @@ export default function Door() {
     }
   }
 
+  function Welcome(props) {
+    React.useEffect(() => {
+      // Runs once, after mounting
+      console.log("hi");
+      var insp = document.getElementById("inspiration1");
+      if (inspirationchecked=== false) {
+        insp.removeAttribute("checked");
+      } else {
+        insp.setAttribute("checked", "");
+      }
+  
+      var nat20= document.getElementById("nat201");
+      if (nat20checked=== false) {
+        nat20.removeAttribute("checked");
+      } else {
+        nat20.setAttribute("checked", "");
+      }
+    }, []);
+  }
 
 
   return (
@@ -128,6 +149,7 @@ export default function Door() {
               min="-5"
               max="30"
               step="1"
+              value={numberrolled}
               onChange={(event) =>
                 setNumber(event.target.value)
               }
@@ -140,7 +162,7 @@ export default function Door() {
           </div>
           <div class="rollCheck">
             <input type="checkbox" id="nat201" class="checkbox" onChange={(event) =>
-                setCheck(!nat20checked )}/>
+                setCheck(!nat20checked )} />
             <label for="nat201">Nat 20</label>
           </div>
           <button
