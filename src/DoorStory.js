@@ -13,14 +13,24 @@ const title = "1: The door";
 const shorttitle = "1";
 const roll = "Dexterity saving throw";
 
+function useStickyState(defaultValue, key) {
+  const [value, setValue] = React.useState(() => {
+    const stickyValue = window.localStorage.getItem(key)
+    return stickyValue !== null ? JSON.parse(stickyValue) : defaultValue
+  })
+  React.useEffect(() => {
+    window.localStorage.setItem(key, JSON.stringify(value))
+  }, [key, value])
+  return [value, setValue]
+}
 
 
 export default function Door() {
-  const [isActive, setActive] = useState("false");
-  const [content, setValue] = useState("");
-  const [numberrolled, setNumber] = useState("");
-  const [inspirationchecked, setInsp] = useState("");
-  const [nat20checked, setCheck] = useState("");
+  const [isActive, setActive] = useStickyState(false, 'isActivestore');
+  const [content, setValue] =  useStickyState(null, 'contentstore');
+  const [numberrolled, setNumber] =  useStickyState(null, 'numberrolledstore');
+  const [inspirationchecked, setInsp] =  useStickyState(null, 'inspirationcheckedstore');
+  const [nat20checked, setCheck] =  useStickyState(null, 'nat20checkedstore');
   const counter=useContext(UserContext);
 
 
@@ -31,21 +41,22 @@ export default function Door() {
 
 
   function changeContent(roll) {
+    let contentadditionalrolled;
     if (roll < 7) {
       console.log("bad roll :( " + contentadditional1);
-      let contentadditionalrolled = contentadditional1;
+      contentadditionalrolled = contentadditional1;
       setValue(contentadditionalrolled);
     } else if (roll > 6 && roll < 13) {
       console.log("better role :/ " + contentadditional2);
-      let contentadditionalrolled = contentadditional2;
+      contentadditionalrolled = contentadditional2;
       setValue(contentadditionalrolled);
     } else if (roll > 12 && roll < 18) {
       console.log("good role :) " + contentadditional3);
-      let contentadditionalrolled = contentadditional3;
+      contentadditionalrolled = contentadditional3;
       setValue(contentadditionalrolled);
     } else if (roll > 17) {
       console.log("awesome role :D " + contentadditional4);
-      let contentadditionalrolled = contentadditional4;
+      contentadditionalrolled = contentadditional4;
       setValue(contentadditionalrolled);
     } else {
       return "";
@@ -70,7 +81,6 @@ export default function Door() {
       const a1 = counter.count + ".png";
       const image = document.getElementById("d20");
       image.src = a1;
-
     }
   };
 
@@ -91,7 +101,6 @@ export default function Door() {
       const a1 = counter.count + ".png";
       const image = document.getElementById("d20");
       image.src = a1;
-
     }
   }
 
