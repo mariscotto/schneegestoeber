@@ -3,6 +3,7 @@
 import React, {useContext} from "react";
 import story from "./img/story.png";
 import UserContext from "./Counter.js";
+import ChangeContext from './Change.js';
 
 const contentadditional1 = "Test1: below or equal to 7";
 const contentadditional2 = "Test2: 7-12";
@@ -35,11 +36,11 @@ export default function Door() {
   const [inspirationchecked, setInsp] = useStickyState(false,"inspirationcheckedstore");
   const [nat20checked, setCheck] = useStickyState(false, "nat20checkedstore");
 
-  const [counternumber, setCounter] = useStickyState(1, "counterstore");
 
-  const counter = useContext(UserContext);
-  counter.count=counternumber
-/*   console.log("logDoor"+counter.count) */
+
+  const counter = useContext(UserContext)
+  const change = useContext(ChangeContext)
+/*   counter.count=counternumber */
 
   const handleToggle = () => {
     setActive(!isActive);
@@ -67,19 +68,19 @@ export default function Door() {
   function changeContent(roll) {
     let contentadditionalrolled;
     if (roll < 7) {
-      console.log("bad roll :( " + contentadditional1);
+/*       console.log("bad roll :( " + contentadditional1); */
       contentadditionalrolled = contentadditional1;
       setValue(contentadditionalrolled);
     } else if (roll > 6 && roll < 13) {
-      console.log("better role :/ " + contentadditional2);
+/*       console.log("better role :/ " + contentadditional2); */
       contentadditionalrolled = contentadditional2;
       setValue(contentadditionalrolled);
     } else if (roll > 12 && roll < 18) {
-      console.log("good role :) " + contentadditional3);
+/*       console.log("good role :) " + contentadditional3); */
       contentadditionalrolled = contentadditional3;
       setValue(contentadditionalrolled);
     } else if (roll > 17) {
-      console.log("awesome role :D " + contentadditional4);
+/*       console.log("awesome role :D " + contentadditional4); */
       contentadditionalrolled = contentadditional4;
       setValue(contentadditionalrolled);
     } else {
@@ -89,40 +90,34 @@ export default function Door() {
 
   function Insp() {
     if (inspirationchecked === true && nat20checked === false) {
-      console.log("descrease insp");
-      let counterfunction = counternumber -1
+      let counterfunction = counter.count -1
       if (counterfunction < 0) {
-        setCounter(0)
         counterfunction=0
         window.confirm("Looks like you do not have enough inspiration dice!");
         setNumber("");
-      } else {
-        setCounter(counterfunction)
       }
-      console.log("new counter! " + counterfunction);
       counter.count=counterfunction
-      console.log("countertot: "+counter.count);
+      console.log("counter.count: "+counter.count);
       const image = document.getElementById("d20");
       image.src = counter.count + ".png";
+      change.changer = 1
+      console.log("change: "+change.changer);
     }
 
     if (nat20checked === true && inspirationchecked === false) {
-      console.log("increase insp");
-      let counterfunction = counternumber +1
+      let counterfunction = counter.count +1
       if (counterfunction> 12) {
-        setCounter(12)
         counterfunction = 12
         window.confirm(
           '"The proximity of a desirable thing tempts one to overindulgence". You may not have more than 12 inspiration dice.'
         );
-      } else {
-        setCounter(counterfunction)
       }
-      console.log("new counter! " + counterfunction);
       counter.count=counterfunction
-      console.log("countertot: "+counter.count);
+      console.log("counter.count: "+counter.count);
       const image = document.getElementById("d20");
       image.src = counter.count + ".png";
+      change.changer = 1
+      console.log("change: "+change.changer);
     }
   }
 

@@ -2,8 +2,9 @@ import TopRow from "./Top_row.js";
 import React from "react";
 import "./App.css";
 import Door from './DoorStory.js';
-import doordata from './doorconfig/doors.json';
+/* import doordata from './doorconfig/doors.json'; */
 import UserContext from './Counter.js';
+import ChangeContext from './Change.js';
 
 
 
@@ -16,11 +17,16 @@ const counter = {
   count:1
 }
 
-  var today = new Date(),
+const change = {
+  changer:0
+}
+console.log("change "+change.changer)
+
+/*   var today = new Date(),
   date =  today.getDate();
   console.log(date);
-  console.log(doordata);
-  
+  console.log(doordata);  */
+
 
 
   return (
@@ -28,8 +34,10 @@ const counter = {
       <div id="grid">
         <h1 id="title">The blizzard</h1>
         <UserContext.Provider value={counter}>
+        <ChangeContext.Provider value={change}>
         <TopRow/>
         <Door/>
+        </ChangeContext.Provider>
         </UserContext.Provider>
       </div>
       
