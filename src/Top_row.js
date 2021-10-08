@@ -9,10 +9,13 @@ export default function Top_row() {
 
   const counter=useContext(UserContext);
 
-  const imagenumber= counter.count + ".png"
-  console.log("top row: "+counter.count)
+  React.useEffect(() => { 
+    const image = document.getElementById("d20");
+    image.src = counter.count + ".png";
+  })
 
-  console.log(counter.count);
+
+
 
   function onLoad(counter2) {
     if(counter2>12) {
@@ -40,7 +43,7 @@ export default function Top_row() {
           className="operation"
           onClick={() => { setCounter(counter.count - 1);onLoad(counter.count-1);}}
         ></img>
-        <img src={imagenumber} alt="inspiration" className="inspiration" id="d20"></img>
+        <img src="1.png" alt="inspiration" className="inspiration" id="d20"></img>
         <img
           src={plus}
           alt="inspiration"

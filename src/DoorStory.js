@@ -45,6 +45,25 @@ export default function Door() {
     setActive(!isActive);
   };
 
+  React.useEffect(() => { 
+    let element = document.getElementById("inspiration1")
+    if (inspirationchecked === true) {
+      element.setAttribute("checked","");
+    } else {
+      element.removeAttribute("checked");
+    }
+  })
+
+  React.useEffect(() => { 
+    let element = document.getElementById("nat201")
+    if (nat20checked === true) {
+      element.setAttribute("checked","");
+    } else {
+      element.removeAttribute("checked");
+    }
+  })
+
+
   function changeContent(roll) {
     let contentadditionalrolled;
     if (roll < 7) {
@@ -78,9 +97,6 @@ export default function Door() {
         setNumber("");
       }
       console.log("new counter! " + counter.count);
-      const a1 = counternumber + ".png";
-      const image = document.getElementById("d20");
-      image.src = a1;
       counter.count=counternumber
       console.log("countertot: "+counternumber);
     }
@@ -100,9 +116,6 @@ export default function Door() {
         setCounter(0)
       }
       console.log("new counter! " + counternumber);
-      const a1 = counternumber + ".png";
-      const image = document.getElementById("d20");
-      image.src = a1;
       counter.count=counternumber
       console.log("countertot: "+counternumber);
     }
@@ -159,7 +172,7 @@ export default function Door() {
                 type="checkbox"
                 id="inspiration1"
                 className="checkbox"
-                onChange={() => setInsp(!inspirationchecked)}
+                onClick={() => setInsp(!inspirationchecked)}
               />
               <label htmlFor="inspiration1">Inspiration dice</label>
             </div>
@@ -168,7 +181,7 @@ export default function Door() {
                 type="checkbox"
                 id="nat201"
                 className="checkbox"
-                onChange={() => setCheck(!nat20checked)
+                onClick={() => setCheck(!nat20checked)
               }
               />
               <label htmlFor="nat201">Nat 20</label>
