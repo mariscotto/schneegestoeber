@@ -152,7 +152,7 @@ export default function Door() {
                 type="checkbox"
                 id="inspiration1"
                 class="checkbox"
-/*                 onChange={(event) => setInsp(!inspirationchecked)} */
+                onChange={(event) => setInsp(!inspirationchecked)}
               />
               <label for="inspiration1">Inspiration dice</label>
             </div>
@@ -161,7 +161,7 @@ export default function Door() {
                 type="checkbox"
                 id="nat201"
                 class="checkbox"
-/*                 onChange={(event) => setCheck(!nat20checked)} */
+                onChange={(event) => setCheck(!nat20checked)}
               />
               <label for="nat201">Nat 20</label>
             </div>
