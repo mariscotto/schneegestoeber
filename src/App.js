@@ -5,13 +5,27 @@ import Door from './DoorStory.js';
 import doordata from './doorconfig/doors.json';
 import UserContext from './Counter.js';
 
-const counter = {
-  count:1,
-}
 
-function App() {
+
+export default function App() {
 
 /*   const [counter, setCounter] = useState(1); */
+
+function useStickyState(defaultValue, key) {
+  const [value, setValue] = React.useState(() => {
+    const stickyValue = window.localStorage.getItem(key);
+    return stickyValue !== null ? JSON.parse(stickyValue) : defaultValue;
+  });
+  React.useEffect(() => {
+    window.localStorage.setItem(key, JSON.stringify(value));
+  }, [key, value]);
+  return [value, setValue];
+}
+
+
+const counter = {
+  count:1
+}
 
   var today = new Date(),
   date =  today.getDate();
@@ -35,4 +49,4 @@ function App() {
   );
 }
 
-export default App;
+/* export default App; */

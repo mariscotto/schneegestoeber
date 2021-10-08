@@ -3,6 +3,7 @@
 import React, {useContext} from "react";
 import story from "./img/story.png";
 import UserContext from "./Counter.js";
+import App from "./App.js";
 
 const contentadditional1 = "Test1: below or equal to 7";
 const contentadditional2 = "Test2: 7-12";
@@ -25,13 +26,17 @@ function useStickyState(defaultValue, key) {
   return [value, setValue];
 }
 
+
+
+
 export default function Door() {
   const [isActive, setActive] = useStickyState(false, "isActivestore");
   const [content, setValue] = useStickyState(null, "contentstore");
   const [numberrolled, setNumber] = useStickyState(null, "numberrolledstore");
   const [inspirationchecked, setInsp] = useStickyState(false,"inspirationcheckedstore");
   const [nat20checked, setCheck] = useStickyState(false, "nat20checkedstore");
-  const [counter2, setCounter] = useStickyState(1, "counterstore");
+
+  const [counternumber, setCounter] = useStickyState(1, "counterstore");
 
   const counter = useContext(UserContext);
 
@@ -78,6 +83,8 @@ export default function Door() {
       const a1 = counter.count + ".png";
       const image = document.getElementById("d20");
       image.src = a1;
+      setCounter(counter.count);
+      console.log("countertot: "+counternumber);
     }
   }
 
@@ -98,6 +105,8 @@ export default function Door() {
       const a1 = counter.count + ".png";
       const image = document.getElementById("d20");
       image.src = a1;
+      setCounter(counter.count);
+      console.log("countertot: "+counternumber);
     }
   }
 
@@ -152,7 +161,7 @@ export default function Door() {
                 type="checkbox"
                 id="inspiration1"
                 class="checkbox"
-                onChange={(event) => setInsp(!inspirationchecked)}
+                onChange={() => setInsp(!inspirationchecked)}
               />
               <label for="inspiration1">Inspiration dice</label>
             </div>
@@ -161,7 +170,8 @@ export default function Door() {
                 type="checkbox"
                 id="nat201"
                 class="checkbox"
-                onChange={(event) => setCheck(!nat20checked)}
+                onChange={() => setCheck(!nat20checked)
+              }
               />
               <label for="nat201">Nat 20</label>
             </div>
