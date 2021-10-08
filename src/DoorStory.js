@@ -1,9 +1,8 @@
 /* import React, { useState, useContext } from "react";
  */
-import React from "react";
+import React, {useContext} from "react";
 import story from "./img/story.png";
-import UserContext from './Counter.js';
-
+import UserContext from "./Counter.js";
 
 const contentadditional1 = "Test1: below or equal to 7";
 const contentadditional2 = "Test2: 7-12";
@@ -17,30 +16,28 @@ const roll = "Dexterity saving throw";
 
 function useStickyState(defaultValue, key) {
   const [value, setValue] = React.useState(() => {
-    const stickyValue = window.localStorage.getItem(key)
-    return stickyValue !== null ? JSON.parse(stickyValue) : defaultValue
-  })
+    const stickyValue = window.localStorage.getItem(key);
+    return stickyValue !== null ? JSON.parse(stickyValue) : defaultValue;
+  });
   React.useEffect(() => {
-    window.localStorage.setItem(key, JSON.stringify(value))
-  }, [key, value])
-  return [value, setValue]
+    window.localStorage.setItem(key, JSON.stringify(value));
+  }, [key, value]);
+  return [value, setValue];
 }
 
-
 export default function Door() {
-  const [isActive, setActive] = useStickyState(false, 'isActivestore');
-  const [content, setValue] =  useStickyState(null, 'contentstore');
-  const [numberrolled, setNumber] =  useStickyState(null, 'numberrolledstore');
-  const [inspirationchecked, setInsp] =  useStickyState(false, 'inspirationcheckedstore');
-  const [nat20checked, setCheck] =  useStickyState(false, 'nat20checkedstore');
-  const counter=React.useContext(UserContext);
+  const [isActive, setActive] = useStickyState(false, "isActivestore");
+  const [content, setValue] = useStickyState(null, "contentstore");
+  const [numberrolled, setNumber] = useStickyState(null, "numberrolledstore");
+  const [inspirationchecked, setInsp] = useStickyState(false,"inspirationcheckedstore");
+  const [nat20checked, setCheck] = useStickyState(false, "nat20checkedstore");
+  const [counter2, setCounter] = useStickyState(1, "counterstore");
 
+  const counter = useContext(UserContext);
 
   const handleToggle = () => {
     setActive(!isActive);
   };
-
-
 
   function changeContent(roll) {
     let contentadditionalrolled;
@@ -66,47 +63,45 @@ export default function Door() {
   }
 
   function decreaseInsp() {
-
     if (inspirationchecked === true) {
-
       console.log("descrease insp");
-      counter.count = counter.count  - 1;
-      if(counter.count>12) {
-        counter.count=12;
+      counter.count = counter.count - 1;
+      if (counter.count > 12) {
+        counter.count = 12;
       }
-      if(counter.count<0) {
-        counter.count=0;
-        window.confirm('Looks like you do not have enough inspiration dice!');
+      if (counter.count < 0) {
+        counter.count = 0;
+        window.confirm("Looks like you do not have enough inspiration dice!");
         setNumber("");
       }
-      console.log("new counter! "+counter.count);
-      const a1 = counter.count + ".png";
-      const image = document.getElementById("d20");
-      image.src = a1;
-    }
-  };
-
-
-  function increaseInsp() {
-    if (nat20checked === true) {
-
-      console.log("increase insp");
-      counter.count = counter.count  +1;
-      if(counter.count>12) {
-        counter.count=12;
-        window.confirm('"The proximity of a desirable thing tempts one to overindulgence". You may not have more than 12 inspiration dice.')
-      }
-      if(counter.count<0) {
-        counter.count=0;
-      }
-      console.log("new counter! "+counter.count);
+      console.log("new counter! " + counter.count);
       const a1 = counter.count + ".png";
       const image = document.getElementById("d20");
       image.src = a1;
     }
   }
 
-  function Welcome(props) {
+  function increaseInsp() {
+    if (nat20checked === true) {
+      console.log("increase insp");
+      counter.count = counter.count + 1;
+      if (counter.count > 12) {
+        counter.count = 12;
+        window.confirm(
+          '"The proximity of a desirable thing tempts one to overindulgence". You may not have more than 12 inspiration dice.'
+        );
+      }
+      if (counter.count < 0) {
+        counter.count = 0;
+      }
+      console.log("new counter! " + counter.count);
+      const a1 = counter.count + ".png";
+      const image = document.getElementById("d20");
+      image.src = a1;
+    }
+  }
+
+  /*   function Welcome(props) {
     React.useEffect(() => {
       // Runs once, after mounting
       console.log("hi");
@@ -124,8 +119,7 @@ export default function Door() {
         nat20.setAttribute("checked", "");
       }
     }, []);
-  }
-
+  } */
 
   return (
     <div class="calender">
@@ -140,42 +134,52 @@ export default function Door() {
       <div className={isActive ? "doorContentEmpty" : "doorContent"}>
         <p>{contentmain}</p>
         <div>
-        <div class="roll">
-          <div class="rollDescription">
-            <p>Please make a {roll}:</p>
-            <input
-              type="number"
-              class="rollNumber"
-              min="-5"
-              max="30"
-              step="1"
-              value={numberrolled}
-              onChange={(event) =>
-                setNumber(event.target.value)
-              }
-            />
+          <div class="roll">
+            <div class="rollDescription">
+              <p>Please make a {roll}:</p>
+              <input
+                type="number"
+                class="rollNumber"
+                min="-5"
+                max="30"
+                step="1"
+                value={numberrolled}
+                onChange={(event) => setNumber(event.target.value)}
+              />
+            </div>
+            <div class="rollCheck">
+              <input
+                type="checkbox"
+                id="inspiration1"
+                class="checkbox"
+/*                 onChange={(event) => setInsp(!inspirationchecked)} */
+              />
+              <label for="inspiration1">Inspiration dice</label>
+            </div>
+            <div class="rollCheck">
+              <input
+                type="checkbox"
+                id="nat201"
+                class="checkbox"
+/*                 onChange={(event) => setCheck(!nat20checked)} */
+              />
+              <label for="nat201">Nat 20</label>
+            </div>
+            <button
+              type="button"
+              class="rollButton"
+              onClick={() => {
+                increaseInsp();
+                decreaseInsp();
+                changeContent(numberrolled);
+              }}
+            >
+              Enter
+            </button>
           </div>
-          <div class="rollCheck">
-            <input type="checkbox" id="inspiration1" class="checkbox" onChange={(event) =>
-                setInsp(!inspirationchecked)}/>
-            <label for="inspiration1">Inspiration dice</label>
-          </div>
-          <div class="rollCheck">
-            <input type="checkbox" id="nat201" class="checkbox" onChange={(event) =>
-                setCheck(!nat20checked )} />
-            <label for="nat201">Nat 20</label>
-          </div>
-          <button
-            type="button"
-            class="rollButton"
-            onClick={() => { increaseInsp();decreaseInsp();changeContent(numberrolled)} }
-          >
-            Enter
-          </button>
-        </div>
 
-        <p class="rollresult">{content}</p>
-      </div>
+          <p class="rollresult">{content}</p>
+        </div>
       </div>
     </div>
   );
