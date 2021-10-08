@@ -1,4 +1,4 @@
-import React, { useState, useContext } from "react";
+import React, { useContext } from "react";
 import minus from "./img/minus.png";
 import plus from "./img/plus.png";
 import line from "./img/line.png";
@@ -9,13 +9,9 @@ export default function Top_row() {
 
   const counter=useContext(UserContext);
 
-  if (counter.count < 0) {
-    counter.count=0;
-  }
+  const imagenumber= counter.count + ".png"
+  console.log("top row: "+counter.count)
 
-  if (counter.count > 12) {
-    counter.count = 12;
-  }
   console.log(counter.count);
 
   function onLoad(counter2) {
@@ -36,27 +32,27 @@ export default function Top_row() {
   }
 
   return (
-    <div class="top_row">
-      <div class="inspiration_dice">
+    <div className="top_row">
+      <div className="inspiration_dice">
         <img
           src={minus}
           alt="minus"
-          class="operation"
+          className="operation"
           onClick={() => { setCounter(counter.count - 1);onLoad(counter.count-1);}}
         ></img>
-        <img src="1.png" alt="inspiration" class="inspiration" id="d20"></img>
+        <img src={imagenumber} alt="inspiration" className="inspiration" id="d20"></img>
         <img
           src={plus}
           alt="inspiration"
-          class="operation"
+          className="operation"
           onClick={() => {setCounter(counter.count + 1);onLoad(counter.count+1)}}
         ></img>
       </div>
-      <div class="character_link">
-        <a class="character" href={PDF} target="_blanc">
+      <div className="character_link">
+        <a className="character" href={PDF} target="_blanc">
           character sheet
         </a>
-        <img src={line} alt="line" class="line"></img>
+        <img src={line} alt="line" className="line"></img>
       </div>
     </div>
   );

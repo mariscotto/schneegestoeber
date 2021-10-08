@@ -11,17 +11,6 @@ export default function App() {
 
 /*   const [counter, setCounter] = useState(1); */
 
-function useStickyState(defaultValue, key) {
-  const [value, setValue] = React.useState(() => {
-    const stickyValue = window.localStorage.getItem(key);
-    return stickyValue !== null ? JSON.parse(stickyValue) : defaultValue;
-  });
-  React.useEffect(() => {
-    window.localStorage.setItem(key, JSON.stringify(value));
-  }, [key, value]);
-  return [value, setValue];
-}
-
 
 const counter = {
   count:1
@@ -35,8 +24,7 @@ const counter = {
 
 
   return (
-    <>
-    <body>
+
       <div id="grid">
         <h1 id="title">The blizzard</h1>
         <UserContext.Provider value={counter}>
@@ -44,8 +32,7 @@ const counter = {
         <Door/>
         </UserContext.Provider>
       </div>
-      </body>
-    </>
+      
   );
 }
 
