@@ -31,7 +31,7 @@ function useStickyState(defaultValue, key) {
 export default function Door() {
   const [isActive, setActive] = useStickyState(false, "isActivestore");
   const [content, setValue] = useStickyState(null, "contentstore");
-  const [numberrolled, setNumber] = useStickyState(null, "numberrolledstore");
+  const [numberrolled, setNumber] = useStickyState(" ", "numberrolledstore");
   const [inspirationchecked, setInsp] = useStickyState(false,"inspirationcheckedstore");
   const [nat20checked, setCheck] = useStickyState(false, "nat20checkedstore");
 
@@ -39,7 +39,7 @@ export default function Door() {
 
   const counter = useContext(UserContext);
   counter.count=counternumber
-  console.log("logDoor"+counter.count)
+/*   console.log("logDoor"+counter.count) */
 
   const handleToggle = () => {
     setActive(!isActive);
@@ -87,37 +87,42 @@ export default function Door() {
     }
   }
 
-  function decreaseInsp() {
-    if (inspirationchecked === true) {
+  function Insp() {
+    if (inspirationchecked === true && nat20checked === false) {
       console.log("descrease insp");
-      setCounter(counternumber - 1)
-      if (counternumber < 0) {
+      let counterfunction = counternumber -1
+      if (counterfunction < 0) {
         setCounter(0)
+        counterfunction=0
         window.confirm("Looks like you do not have enough inspiration dice!");
         setNumber("");
+      } else {
+        setCounter(counterfunction)
       }
-      console.log("new counter! " + counter.count);
-      counter.count=counternumber
-      console.log("countertot: "+counternumber);
+      console.log("new counter! " + counterfunction);
+      counter.count=counterfunction
+      console.log("countertot: "+counter.count);
+      const image = document.getElementById("d20");
+      image.src = counter.count + ".png";
     }
-  }
 
-  function increaseInsp() {
-    if (nat20checked === true) {
+    if (nat20checked === true && inspirationchecked === false) {
       console.log("increase insp");
-      setCounter(counternumber + 1)
-      if (counternumber> 12) {
+      let counterfunction = counternumber +1
+      if (counterfunction> 12) {
         setCounter(12)
+        counterfunction = 12
         window.confirm(
           '"The proximity of a desirable thing tempts one to overindulgence". You may not have more than 12 inspiration dice.'
         );
+      } else {
+        setCounter(counterfunction)
       }
-      if (counternumber < 0) {
-        setCounter(0)
-      }
-      console.log("new counter! " + counternumber);
-      counter.count=counternumber
-      console.log("countertot: "+counternumber);
+      console.log("new counter! " + counterfunction);
+      counter.count=counterfunction
+      console.log("countertot: "+counter.count);
+      const image = document.getElementById("d20");
+      image.src = counter.count + ".png";
     }
   }
 
@@ -190,8 +195,7 @@ export default function Door() {
               type="button"
               className="rollButton"
               onClick={() => {
-                increaseInsp();
-                decreaseInsp();
+                Insp();
                 changeContent(numberrolled);
               }}
             >
