@@ -70,20 +70,20 @@ export default function Door() {
   function decreaseInsp() {
     if (inspirationchecked === true) {
       console.log("descrease insp");
-      counter.count = counter.count - 1;
-      if (counter.count > 12) {
-        counter.count = 12;
+      setCounter(counternumber - 1)
+      if (counternumber > 12) {
+        setCounter(12)
       }
-      if (counter.count < 0) {
-        counter.count = 0;
+      if (counternumber < 0) {
+        setCounter(0)
         window.confirm("Looks like you do not have enough inspiration dice!");
         setNumber("");
       }
       console.log("new counter! " + counter.count);
-      const a1 = counter.count + ".png";
+      const a1 = counternumber + ".png";
       const image = document.getElementById("d20");
       image.src = a1;
-      setCounter(counter.count);
+      counter.count=counternumber
       console.log("countertot: "+counternumber);
     }
   }
@@ -91,21 +91,21 @@ export default function Door() {
   function increaseInsp() {
     if (nat20checked === true) {
       console.log("increase insp");
-      counter.count = counter.count + 1;
-      if (counter.count > 12) {
-        counter.count = 12;
+      setCounter(counternumber + 1)
+      if (counternumber> 12) {
+        setCounter(12)
         window.confirm(
           '"The proximity of a desirable thing tempts one to overindulgence". You may not have more than 12 inspiration dice.'
         );
       }
-      if (counter.count < 0) {
-        counter.count = 0;
+      if (counternumber < 0) {
+        setCounter(0)
       }
-      console.log("new counter! " + counter.count);
-      const a1 = counter.count + ".png";
+      console.log("new counter! " + counternumber);
+      const a1 = counternumber + ".png";
       const image = document.getElementById("d20");
       image.src = a1;
-      setCounter(counter.count);
+      counter.count=counternumber
       console.log("countertot: "+counternumber);
     }
   }
