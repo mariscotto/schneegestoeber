@@ -1,5 +1,5 @@
 import React, {useState} from 'react'
-import item from "./img/item.png";
+import item from "./img/item.png"
 
 export default function Door() {
 
@@ -11,7 +11,7 @@ export default function Door() {
     const [isActive, setActive] = useState("false");
 
     const handleToggle = () => {
-        setActive(!isActive);
+        setActive(!isActive)
     }
     return (
         <div class="calender">

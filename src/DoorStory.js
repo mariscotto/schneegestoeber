@@ -1,29 +1,29 @@
 /* import React, { useState, useContext } from "react";
  */
-import React, {useContext} from "react";
-import story from "./img/story.png";
-import UserContext from "./Counter.js";
-import ChangeContext from './Change.js';
+import React, {useContext} from "react"
+import story from "./img/story.png"
+import UserContext from "./Counter.js"
+import ChangeContext from './Change.js'
 
-const contentadditional1 = "Test1: below or equal to 7";
-const contentadditional2 = "Test2: 7-12";
-const contentadditional3 = "Test3: 13-17";
-const contentadditional4 = "Test4: 18+";
+const contentadditional1 = "Test1: below or equal to 7"
+const contentadditional2 = "Test2: 7-12"
+const contentadditional3 = "Test3: 13-17"
+const contentadditional4 = "Test4: 18+"
 
-const contentmain = "Test";
-const title = "1: The door";
-const shorttitle = "1";
-const roll = "Dexterity saving throw";
+const contentmain = "Test"
+const title = "1: The door"
+const shorttitle = "1"
+const roll = "Dexterity saving throw"
 
 function useStickyState(defaultValue, key) {
   const [value, setValue] = React.useState(() => {
-    const stickyValue = window.localStorage.getItem(key);
-    return stickyValue !== null ? JSON.parse(stickyValue) : defaultValue;
+    const stickyValue = window.localStorage.getItem(key)
+    return stickyValue !== null ? JSON.parse(stickyValue) : defaultValue
   });
   React.useEffect(() => {
-    window.localStorage.setItem(key, JSON.stringify(value));
-  }, [key, value]);
-  return [value, setValue];
+    window.localStorage.setItem(key, JSON.stringify(value))
+  }, [key, value])
+  return [value, setValue]
 }
 
 const isActivestore = "isActivestore"+shorttitle
@@ -34,11 +34,11 @@ const nat20checkedstore = "nat20checkedstore"+shorttitle
 
 
 export default function Door() {
-  const [isActive, setActive] = useStickyState(true, isActivestore);
-  const [content, setValue] = useStickyState(null, contentstore);
-  const [numberrolled, setNumber] = useStickyState(" ", numberrolledstore);
-  const [inspirationchecked, setInsp] = useStickyState(false,inspirationcheckedstore);
-  const [nat20checked, setCheck] = useStickyState(false, nat20checkedstore);
+  const [isActive, setActive] = useStickyState(true, isActivestore)
+  const [content, setValue] = useStickyState(null, contentstore)
+  const [numberrolled, setNumber] = useStickyState(" ", numberrolledstore)
+  const [inspirationchecked, setInsp] = useStickyState(false,inspirationcheckedstore)
+  const [nat20checked, setCheck] = useStickyState(false, nat20checkedstore)
 
 
 
@@ -48,48 +48,44 @@ export default function Door() {
   const nat20id="nat20checked"+shorttitle
 
   const handleToggle = () => {
-    setActive(!isActive);
+    setActive(!isActive)
   };
 
   React.useEffect(() => { 
     let element = document.getElementById(inspirationid)
     if (inspirationchecked === true) {
-      element.setAttribute("checked","");
+      element.setAttribute("checked","")
     } else {
-      element.removeAttribute("checked");
+      element.removeAttribute("checked")
     }
   })
 
   React.useEffect(() => { 
     let element = document.getElementById(nat20id)
     if (nat20checked === true) {
-      element.setAttribute("checked","");
+      element.setAttribute("checked","")
     } else {
-      element.removeAttribute("checked");
+      element.removeAttribute("checked")
     }
   })
 
 
   function changeContent(roll) {
-    let contentadditionalrolled;
+    let contentadditionalrolled
     if (roll < 7) {
-/*       console.log("bad roll :( " + contentadditional1); */
-      contentadditionalrolled = contentadditional1;
-      setValue(contentadditionalrolled);
+      contentadditionalrolled = contentadditional1
+      setValue(contentadditionalrolled)
     } else if (roll > 6 && roll < 13) {
-/*       console.log("better role :/ " + contentadditional2); */
-      contentadditionalrolled = contentadditional2;
-      setValue(contentadditionalrolled);
+      contentadditionalrolled = contentadditional2
+      setValue(contentadditionalrolled)
     } else if (roll > 12 && roll < 18) {
-/*       console.log("good role :) " + contentadditional3); */
-      contentadditionalrolled = contentadditional3;
-      setValue(contentadditionalrolled);
+      contentadditionalrolled = contentadditional3
+      setValue(contentadditionalrolled)
     } else if (roll > 17) {
-/*       console.log("awesome role :D " + contentadditional4); */
-      contentadditionalrolled = contentadditional4;
-      setValue(contentadditionalrolled);
+      contentadditionalrolled = contentadditional4
+      setValue(contentadditionalrolled)
     } else {
-      return "";
+      return ""
     }
   }
 
@@ -98,15 +94,15 @@ export default function Door() {
       let counterfunction = counter.count -1
       if (counterfunction < 0) {
         counterfunction=0
-        window.confirm("Looks like you do not have enough inspiration dice!");
-        setNumber("");
+        window.confirm("Looks like you do not have enough inspiration dice!")
+        setNumber("")
       }
       counter.count=counterfunction
-      console.log("counter.count: "+counter.count);
-      const image = document.getElementById("d20");
-      image.src = counter.count + ".png";
+      console.log("counter.count: "+counter.count)
+      const image = document.getElementById("d20")
+      image.src = counter.count + ".png"
       change.changer = 1
-      console.log("change: "+change.changer);
+      console.log("change: "+change.changer)
     }
 
     if (nat20checked === true && inspirationchecked === false) {
@@ -118,11 +114,11 @@ export default function Door() {
         );
       }
       counter.count=counterfunction
-      console.log("counter.count: "+counter.count);
-      const image = document.getElementById("d20");
-      image.src = counter.count + ".png";
+      console.log("counter.count: "+counter.count)
+      const image = document.getElementById("d20")
+      image.src = counter.count + ".png"
       change.changer = 1
-      console.log("change: "+change.changer);
+      console.log("change: "+change.changer)
     }
   }
 

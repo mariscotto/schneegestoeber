@@ -1,22 +1,22 @@
-import React, { useContext } from "react";
-import minus from "./img/minus.png";
-import plus from "./img/plus.png";
-import line from "./img/line.png";
-import PDF from "./sheet.pdf";
-import UserContext from './Counter.js';
-import ChangeContext from './Change.js';
+import React, { useContext } from "react"
+import minus from "./img/minus.png"
+import plus from "./img/plus.png"
+import line from "./img/line.png"
+import PDF from "./sheet.pdf"
+import UserContext from './Counter.js'
+import ChangeContext from './Change.js'
 
 export default function Top_row() {
 
   function useStickyState(defaultValue, key) {
     const [value, setValue] = React.useState(() => {
-      const stickyValue = window.localStorage.getItem(key);
-      return stickyValue !== null ? JSON.parse(stickyValue) : defaultValue;
-    });
+      const stickyValue = window.localStorage.getItem(key)
+      return stickyValue !== null ? JSON.parse(stickyValue) : defaultValue
+    })
     React.useEffect(() => {
-      window.localStorage.setItem(key, JSON.stringify(value));
-    }, [key, value]);
-    return [value, setValue];
+      window.localStorage.setItem(key, JSON.stringify(value))
+    }, [key, value])
+    return [value, setValue]
   }
 
   const counter=useContext(UserContext)
@@ -40,10 +40,10 @@ export default function Top_row() {
 
   function onLoad(counter2) {
     if(counter2>12) {
-      setCounter(12);
+      setCounter(12)
     }
     if(counter2<0) {
-      setCounter(0);
+      setCounter(0)
     }
   }
 

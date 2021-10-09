@@ -1,5 +1,5 @@
 import React, {useState} from 'react'
-import encounter from "./img/encounter.png";
+import encounter from "./img/encounter.png"
 
 export default function Door() {
 
@@ -11,7 +11,7 @@ export default function Door() {
     const [isActive, setActive] = useState("false");
 
     const handleToggle = () => {
-        setActive(!isActive);
+        setActive(!isActive)
     }
     const [showResults, setShowResults] = React.useState(false)
 

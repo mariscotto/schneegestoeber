@@ -1,14 +1,8 @@
 TODO
 
 Must Dos:
-- Localstorage
-        - insp number
-        - check insp
-        - check nat20
-        - number in input field
-        - detailed description4
-        - door open
-
+- Top title in tab
+- ein globaler Counter
 - Calender: Piecing everything together
 - Content
 
