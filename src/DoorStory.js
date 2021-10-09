@@ -26,28 +26,33 @@ function useStickyState(defaultValue, key) {
   return [value, setValue];
 }
 
-
+const isActivestore = "isActivestore"+shorttitle
+const contentstore = "contentstore"+shorttitle
+const numberrolledstore = "numberrolledstore"+shorttitle
+const inspirationcheckedstore = "inspirationcheckedstore"+shorttitle
+const nat20checkedstore = "nat20checkedstore"+shorttitle
 
 
 export default function Door() {
-  const [isActive, setActive] = useStickyState(false, "isActivestore");
-  const [content, setValue] = useStickyState(null, "contentstore");
-  const [numberrolled, setNumber] = useStickyState(" ", "numberrolledstore");
-  const [inspirationchecked, setInsp] = useStickyState(false,"inspirationcheckedstore");
-  const [nat20checked, setCheck] = useStickyState(false, "nat20checkedstore");
+  const [isActive, setActive] = useStickyState(true, isActivestore);
+  const [content, setValue] = useStickyState(null, contentstore);
+  const [numberrolled, setNumber] = useStickyState(" ", numberrolledstore);
+  const [inspirationchecked, setInsp] = useStickyState(false,inspirationcheckedstore);
+  const [nat20checked, setCheck] = useStickyState(false, nat20checkedstore);
 
 
 
   const counter = useContext(UserContext)
   const change = useContext(ChangeContext)
-/*   counter.count=counternumber */
+  const inspirationid="inspirationchecked"+shorttitle
+  const nat20id="nat20checked"+shorttitle
 
   const handleToggle = () => {
     setActive(!isActive);
   };
 
   React.useEffect(() => { 
-    let element = document.getElementById("inspiration1")
+    let element = document.getElementById(inspirationid)
     if (inspirationchecked === true) {
       element.setAttribute("checked","");
     } else {
@@ -56,7 +61,7 @@ export default function Door() {
   })
 
   React.useEffect(() => { 
-    let element = document.getElementById("nat201")
+    let element = document.getElementById(nat20id)
     if (nat20checked === true) {
       element.setAttribute("checked","");
     } else {
@@ -121,25 +126,6 @@ export default function Door() {
     }
   }
 
-  /*   function Welcome(props) {
-    React.useEffect(() => {
-      // Runs once, after mounting
-      console.log("hi");
-      var insp = document.getElementById("inspiration1");
-      if (inspirationchecked=== false) {
-        insp.removeAttribute("checked");
-      } else {
-        insp.setAttribute("checked", "");
-      }
-  
-      var nat20= document.getElementById("nat201");
-      if (nat20checked=== false) {
-        nat20.removeAttribute("checked");
-      } else {
-        nat20.setAttribute("checked", "");
-      }
-    }, []);
-  } */
 
   return (
     <div className="calender">
@@ -170,7 +156,7 @@ export default function Door() {
             <div className="rollCheck">
               <input
                 type="checkbox"
-                id="inspiration1"
+                id={inspirationid}
                 className="checkbox"
                 onClick={() => setInsp(!inspirationchecked)}
               />
@@ -179,7 +165,7 @@ export default function Door() {
             <div className="rollCheck">
               <input
                 type="checkbox"
-                id="nat201"
+                id={nat20id}
                 className="checkbox"
                 onClick={() => setCheck(!nat20checked)
               }

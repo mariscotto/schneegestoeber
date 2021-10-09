@@ -32,7 +32,7 @@ console.log("change "+change.changer)
   return (
 
       <div id="grid">
-        <h1 id="title">The blizzard</h1>
+        <h1 id="title">Frozen Flames</h1>
         <UserContext.Provider value={counter}>
         <ChangeContext.Provider value={change}>
         <TopRow/>
