@@ -4,6 +4,7 @@ import "./App.css"
 import UserContext from './Counter.js'
 import ChangeContext from './Change.js'
 import Calender from './Calender.js'
+import Footer from './Footer.js'
 
 
 
@@ -31,7 +32,7 @@ console.log("change "+change.changer)
 
 
   return (
-
+      <>
       <div id="grid">
         <h1 id="title">Frozen Flames</h1>
         <UserContext.Provider value={counter}>
@@ -41,6 +42,8 @@ console.log("change "+change.changer)
         </ChangeContext.Provider>
         </UserContext.Provider>
       </div>
+      <Footer />
+      </>
       
   );
 }

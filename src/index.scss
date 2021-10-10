@@ -48,6 +48,11 @@ p, label, a {
   letter-spacing: 0.2rem;
 }
 
+#total {
+  margin:0!important;
+  padding:0!important;
+}
+
 #grid{
   display:grid;
   margin:0.5% 5%;
@@ -330,4 +335,29 @@ h3 {
 .link {
   color: var(--primary-color)!important;
   cursor: pointer;
+}
+
+//FOOTER
+
+.footer {
+  height:100px;
+  margin-top:100px;
+  background-color: var(--bg_blue);
+  align-items: center;
+  flex-direction:column;
+  display: flex;
+  justify-content: center;
+
+  a {
+    color:var(--primary-color);
+    font-size: small;
+    text-align: center;
+    text-decoration: none;
+  }
+  p {
+    color:var(--text-color-primary);
+    text-align: center;
+    font-size: small;
+
+  }
 }
