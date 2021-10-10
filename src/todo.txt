@@ -1,13 +1,12 @@
 TODO
 
 Must Dos:
-- Top title in tab
 - ein globaler Counter
-- Calender: Piecing everything together
 - Content
 
 
 Nice to haves:
+- Transparent favicon
 - scroll within card (fancy scrollbar)
 - back to top button
 
