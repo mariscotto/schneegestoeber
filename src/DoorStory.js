@@ -5,15 +5,7 @@ import story from "./img/story.png"
 import UserContext from "./Counter.js"
 import ChangeContext from './Change.js'
 
-const contentadditional1 = "Test1: below or equal to 7"
-const contentadditional2 = "Test2: 7-12"
-const contentadditional3 = "Test3: 13-17"
-const contentadditional4 = "Test4: 18+"
 
-const contentmain = "Test"
-const title = "1: The door"
-const shorttitle = "1"
-const roll = "Dexterity saving throw"
 
 function useStickyState(defaultValue, key) {
   const [value, setValue] = React.useState(() => {
@@ -26,14 +18,16 @@ function useStickyState(defaultValue, key) {
   return [value, setValue]
 }
 
-const isActivestore = "isActivestore"+shorttitle
-const contentstore = "contentstore"+shorttitle
-const numberrolledstore = "numberrolledstore"+shorttitle
-const inspirationcheckedstore = "inspirationcheckedstore"+shorttitle
-const nat20checkedstore = "nat20checkedstore"+shorttitle
+
+export default function Door(props) {
 
 
-export default function Door() {
+  const isActivestore = "isActivestore"+props.shorttitle
+  const contentstore = "contentstore"+props.shorttitle
+  const numberrolledstore = "numberrolledstore"+props.shorttitle
+  const inspirationcheckedstore = "inspirationcheckedstore"+props.shorttitle
+  const nat20checkedstore = "nat20checkedstore"+props.shorttitle
+
   const [isActive, setActive] = useStickyState(true, isActivestore)
   const [content, setValue] = useStickyState(null, contentstore)
   const [numberrolled, setNumber] = useStickyState(" ", numberrolledstore)
@@ -41,11 +35,10 @@ export default function Door() {
   const [nat20checked, setCheck] = useStickyState(false, nat20checkedstore)
 
 
-
   const counter = useContext(UserContext)
   const change = useContext(ChangeContext)
-  const inspirationid="inspirationchecked"+shorttitle
-  const nat20id="nat20checked"+shorttitle
+  const inspirationid="inspirationchecked"+props.shorttitle
+  const nat20id="nat20checked"+props.shorttitle
 
   const handleToggle = () => {
     setActive(!isActive)
@@ -73,16 +66,16 @@ export default function Door() {
   function changeContent(roll) {
     let contentadditionalrolled
     if (roll < 7) {
-      contentadditionalrolled = contentadditional1
+      contentadditionalrolled = props.contentadditional1
       setValue(contentadditionalrolled)
     } else if (roll > 6 && roll < 13) {
-      contentadditionalrolled = contentadditional2
+      contentadditionalrolled = props.contentadditional2
       setValue(contentadditionalrolled)
     } else if (roll > 12 && roll < 18) {
-      contentadditionalrolled = contentadditional3
+      contentadditionalrolled = props.contentadditional3
       setValue(contentadditionalrolled)
     } else if (roll > 17) {
-      contentadditionalrolled = contentadditional4
+      contentadditionalrolled = props.contentadditional4
       setValue(contentadditionalrolled)
     } else {
       return ""
@@ -127,18 +120,18 @@ export default function Door() {
     <div className="calender">
       <div className={isActive ? "door" : "doorOpen"} onClick={handleToggle}>
         <h3 className="door_title">
-          <span className="title">{title}</span>
-          <span className="shorttitle">{shorttitle}</span>
+          <span className="title">{props.title}</span>
+          <span className="shorttitle">{props.shorttitle}</span>
         </h3>
         <hr className="separation"></hr>
         <img src={story} alt="story" className="icons"></img>
       </div>
       <div className={isActive ? "doorContentEmpty" : "doorContent"}>
-        <p>{contentmain}</p>
+        <p>{props.contentmain}</p>
         <div>
           <div className="roll">
             <div className="rollDescription">
-              <p>Please make a {roll}:</p>
+              <p>Please make a {props.roll}:</p>
               <input
                 type="number"
                 className="rollNumber"

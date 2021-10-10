@@ -1,14 +1,22 @@
-import React, {useState} from 'react'
+import React from 'react'
 import item from "./img/item.png"
 
-export default function Door() {
+export default function Door(props) {
 
-    const contentmain ="Test"
-    const title= "1: The door"
-    const shorttitle= "1"
-    const image="item.png"
 
-    const [isActive, setActive] = useState("false");
+  function useStickyState(defaultValue, key) {
+    const [value, setValue] = React.useState(() => {
+      const stickyValue = window.localStorage.getItem(key)
+      return stickyValue !== null ? JSON.parse(stickyValue) : defaultValue
+    });
+    React.useEffect(() => {
+      window.localStorage.setItem(key, JSON.stringify(value))
+    }, [key, value])
+    return [value, setValue]
+  }
+  
+  const isActivestore = "isActivestore"+props.shorttitle
+  const [isActive, setActive] = useStickyState(true, isActivestore)
 
     const handleToggle = () => {
         setActive(!isActive)
@@ -18,15 +26,15 @@ export default function Door() {
             
         <div className={isActive ? "door": "doorOpen"} onClick={handleToggle}>
           <h3 class="door_title">
-          <span class="title">{title}</span>
-          <span class="shorttitle">{shorttitle}</span>
+          <span class="title">{props.title}</span>
+          <span class="shorttitle">{props.shorttitle}</span>
           </h3>
           <hr class="separation"></hr>
           <img src={item} alt="item" class="icons"></img>
         </div>
         <div className={isActive ? "doorContentEmpty": "doorContent"} >
-            <p>{contentmain}</p>
-            <img src={image} alt="item" class="item"></img>
+            <p>{props.contentmain}</p>
+            <img src={props.image} alt="item" class="item"></img>
         </div>
       </div>
     )

@@ -3,212 +3,212 @@
         "doorType": 1,
         "title":"title1",
         "shorttitle":"1",
-        "contentmain":"contentstory",
+        "contentmain":"contentstory1",
         "roll":"Dexterity saving throw", 
-        "contentadditional1":"content+",
-        "contentadditional2":"content+",
-        "contentadditional3":"content+",
-        "contentadditional4":"content+"
+        "contentadditional1":"content+1",
+        "contentadditional2":"content+2",
+        "contentadditional3":"content+3",
+        "contentadditional4":"content+4"
     },
     {
         "doorType": 2,
         "title":"title2",
         "shorttitle":"2",
-        "contentmain":"contentitem", 
+        "contentmain":"contentitem2", 
         "image":"thisisaniamge"
     },
     {
         "doorType": 1,
         "title":"title3",
         "shorttitle":"3",
-        "contentmain":"contentstory",
+        "contentmain":"contentstory3",
         "roll":"Dexterity saving throw", 
-        "contentadditional1":"content+",
-        "contentadditional2":"content+",
-        "contentadditional3":"content+",
-        "contentadditional4":"content+"
+        "contentadditional1":"content+1",
+        "contentadditional2":"content+2",
+        "contentadditional3":"content+3",
+        "contentadditional4":"content+4"
     },
     {
         "doorType": 2,
         "title":"title4",
         "shorttitle":"4",
-        "contentmain":"contentitem", 
+        "contentmain":"contentitem4", 
         "image":"thisisaniamge"
     },
     {
         "doorType": 1,
         "title":"title5",
         "shorttitle":"5",
-        "contentmain":"contentstory",
+        "contentmain":"contentstory5",
         "roll":"Dexterity saving throw", 
-        "contentadditional1":"content+",
-        "contentadditional2":"content+",
-        "contentadditional3":"content+",
-        "contentadditional4":"content+"
+        "contentadditional1":"content+1",
+        "contentadditional2":"content+2",
+        "contentadditional3":"content+3",
+        "contentadditional4":"content+4"
     },
     {
         "doorType": 2,
         "title":"title6",
         "shorttitle":"6",
-        "contentmain":"contentitem", 
+        "contentmain":"contentitem6", 
         "image":"thisisaniamge"
     },
     {
         "doorType": 3,
         "title":"title7",
         "shorttitle":"7",
-        "contentmain":"contentencounter",
+        "contentmain":"contentencounter7",
         "contentadditional":"content+"
     },
     {
         "doorType": 1,
         "title":"title8",
         "shorttitle":"8",
-        "contentmain":"contentstory",
+        "contentmain":"contentstory8",
         "roll":"Dexterity saving throw", 
-        "contentadditional1":"content+",
-        "contentadditional2":"content+",
-        "contentadditional3":"content+",
-        "contentadditional4":"content+"
+        "contentadditional1":"content+1",
+        "contentadditional2":"content+2",
+        "contentadditional3":"content+3",
+        "contentadditional4":"content+4"
     },
     {
         "doorType": 2,
         "title":"title9",
         "shorttitle":"9",
-        "contentmain":"contentitem", 
+        "contentmain":"contentitem9", 
         "image":"thisisaniamge"
     },
     {
         "doorType": 1,
         "title":"title10",
         "shorttitle":"10",
-        "contentmain":"contentstory",
+        "contentmain":"contentstory10",
         "roll":"Dexterity saving throw", 
-        "contentadditional1":"content+",
-        "contentadditional2":"content+",
-        "contentadditional3":"content+",
-        "contentadditional4":"content+"
+        "contentadditional1":"content+1",
+        "contentadditional2":"content+2",
+        "contentadditional3":"content+3",
+        "contentadditional4":"content+4"
     },
     {
         "doorType": 2,
         "title":"title11",
         "shorttitle":"11",
-        "contentmain":"contentitem", 
+        "contentmain":"contentitem11", 
         "image":"thisisaniamge"
     },
     {
         "doorType": 1,
         "title":"title12",
         "shorttitle":"12",
-        "contentmain":"contentstory",
+        "contentmain":"contentstory12",
         "roll":"Dexterity saving throw", 
-        "contentadditional1":"content+",
-        "contentadditional2":"content+",
-        "contentadditional3":"content+",
-        "contentadditional4":"content+"
+        "contentadditional1":"content+1",
+        "contentadditional2":"content+2",
+        "contentadditional3":"content+3",
+        "contentadditional4":"content+4"
     },
     {
         "doorType": 3,
         "title":"title13",
         "shorttitle":"13",
-        "contentmain":"contentencounter",
+        "contentmain":"contentencounter13",
         "contentadditional":"content+"
     },
     {
         "doorType": 2,
         "title":"title14",
         "shorttitle":"14",
-        "contentmain":"contentitem", 
+        "contentmain":"contentitem14", 
         "image":"thisisaniamge"
     },
     {
         "doorType": 1,
         "title":"title15",
         "shorttitle":"15",
-        "contentmain":"contentstory",
+        "contentmain":"contentstory15",
         "roll":"Dexterity saving throw", 
-        "contentadditional1":"content+",
-        "contentadditional2":"content+",
-        "contentadditional3":"content+",
-        "contentadditional4":"content+"
+        "contentadditional1":"content+1",
+        "contentadditional2":"content+2",
+        "contentadditional3":"content+3",
+        "contentadditional4":"content+4"
     },
     {
         "doorType": 2,
         "title":"title16",
         "shorttitle":"16",
-        "contentmain":"contentitem", 
+        "contentmain":"contentitem16", 
         "image":"thisisaniamge"
     },
     {
         "doorType": 1,
         "title":"title17",
         "shorttitle":"17",
-        "contentmain":"contentstory",
+        "contentmain":"contentstory17",
         "roll":"Dexterity saving throw", 
-        "contentadditional1":"content+",
-        "contentadditional2":"content+",
-        "contentadditional3":"content+",
-        "contentadditional4":"content+"
+        "contentadditional1":"content+1",
+        "contentadditional2":"content+2",
+        "contentadditional3":"content+3",
+        "contentadditional4":"content+4"
     },
     {
         "doorType": 2,
         "title":"title18",
         "shorttitle":"18",
-        "contentmain":"contentitem", 
+        "contentmain":"contentitem18", 
         "image":"thisisaniamge"
     },
     {
         "doorType": 1,
         "title":"title19",
         "shorttitle":"19",
-        "contentmain":"contentstory",
+        "contentmain":"contentstory19",
         "roll":"Dexterity saving throw", 
-        "contentadditional1":"content+",
-        "contentadditional2":"content+",
-        "contentadditional3":"content+",
-        "contentadditional4":"content+"
+        "contentadditional1":"content+1",
+        "contentadditional2":"content+2",
+        "contentadditional3":"content+3",
+        "contentadditional4":"content+4"
     },
     {
         "doorType": 3,
         "title":"title20",
         "shorttitle":"20",
-        "contentmain":"contentencounter",
+        "contentmain":"contentencounter20",
         "contentadditional":"content+"
     },
     {
         "doorType": 1,
         "title":"title21",
         "shorttitle":"21",
-        "contentmain":"contentstory",
+        "contentmain":"contentstory21",
         "roll":"Dexterity saving throw", 
-        "contentadditional1":"content+",
-        "contentadditional2":"content+",
-        "contentadditional3":"content+",
-        "contentadditional4":"content+"
+        "contentadditional1":"content+1",
+        "contentadditional2":"content+2",
+        "contentadditional3":"content+3",
+        "contentadditional4":"content+4"
     },
     {
         "doorType": 1,
         "title":"title22",
         "shorttitle":"22",
-        "contentmain":"contentstory",
+        "contentmain":"contentstory22",
         "roll":"Dexterity saving throw", 
-        "contentadditional1":"content+",
-        "contentadditional2":"content+",
-        "contentadditional3":"content+",
-        "contentadditional4":"content+"
+        "contentadditional1":"content+1",
+        "contentadditional2":"content+2",
+        "contentadditional3":"content+3",
+        "contentadditional4":"content+4"
     },
     {
         "doorType": 2,
         "title":"title23",
         "shorttitle":"23",
-        "contentmain":"contentitem", 
+        "contentmain":"contentitem23", 
         "image":"thisisaniamge"
     },
     {
         "doorType": 3,
         "title":"title24",
         "shorttitle":"24",
-        "contentmain":"contentencounter",
+        "contentmain":"contentencounter24",
         "contentadditional":"content+"
     }
 

@@ -1,22 +1,32 @@
-import React, {useState} from 'react'
+import React from 'react'
 import encounter from "./img/encounter.png"
 
-export default function Door() {
+export default function Door(props) {
 
-    const contentmain ="Test"
-    const title= "1: The door"
-    const shorttitle= "1"
-    const contentadditional="Test2"
+  function useStickyState(defaultValue, key) {
+    const [value, setValue] = React.useState(() => {
+      const stickyValue = window.localStorage.getItem(key)
+      return stickyValue !== null ? JSON.parse(stickyValue) : defaultValue
+    });
+    React.useEffect(() => {
+      window.localStorage.setItem(key, JSON.stringify(value))
+    }, [key, value])
+    return [value, setValue]
+  }
+  
+  const isActivestore = "isActivestore"+props.shorttitle
+  const [isActive, setActive] = useStickyState(true, isActivestore)
 
-    const [isActive, setActive] = useState("false");
 
     const handleToggle = () => {
         setActive(!isActive)
     }
-    const [showResults, setShowResults] = React.useState(false)
+
+    const showResultsstore = "showResultsstore"+props.shorttitle
+    const [showResults,  setShowResults] = useStickyState(false, showResultsstore)
 
     const Results = () => (
-      <p>{contentadditional}</p>
+      <p>{props.contentadditional}</p>
     )
 
     return (
@@ -24,14 +34,14 @@ export default function Door() {
             
         <div className={isActive ? "door": "doorOpen"} onClick={handleToggle}>
           <h3 class="door_title">
-          <span class="title">{title}</span>
-          <span class="shorttitle">{shorttitle}</span>
+          <span class="title">{props.title}</span>
+          <span class="shorttitle">{props.shorttitle}</span>
           </h3>
           <hr class="separation"></hr>
           <img src={encounter} alt="story" class="icons"></img>
         </div>
         <div className={isActive ? "doorContentEmpty": "doorContent"} >
-            <p>{contentmain}</p>
+            <p>{props.contentmain}</p>
             <p class="link" onClick = {() => setShowResults(true)} >Show encounter</p>
             { showResults ? <Results /> : null }
             
