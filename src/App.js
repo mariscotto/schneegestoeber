@@ -1,38 +1,51 @@
-import TopRow from "./Top_row.js";
-import React from "react";
-import "./App.css";
-import Door from './DoorStory.js';
-import doordata from './doorconfig/doors.json';
-import UserContext from './Counter.js';
+import TopRow from "./Top_row.js"
+import React from "react"
+import "./App.css"
+import UserContext from './Counter.js'
+import ChangeContext from './Change.js'
+import Calender from './Calender.js'
+import Footer from './Footer.js'
 
-const counter = {
-  count:1,
-}
 
-function App() {
+
+export default function App() {
 
 /*   const [counter, setCounter] = useState(1); */
 
-  var today = new Date(),
-  date =  today.getDate();
-  console.log(date);
-  console.log(doordata);
-  
+
+const counter = {
+  count:1
+}
+
+const change = {
+  changer:0
+}
+console.log("change "+change.changer)
+
+/*   var today = new Date(),
+  date =  today.getDate()
+  console.log(date)
+  console.log(doordata) */
+
+/*  let html = <Door/ > */
+
 
 
   return (
-    <>
-    <body>
+      <>
       <div id="grid">
-        <h1 id="title">The blizzard</h1>
+        <h1 id="title">Frozen Flames</h1>
         <UserContext.Provider value={counter}>
+        <ChangeContext.Provider value={change}>
         <TopRow/>
-        <Door/>
+        <Calender />
+        </ChangeContext.Provider>
         </UserContext.Provider>
       </div>
-      </body>
-    </>
+      <Footer />
+      </>
+      
   );
 }
 
-export default App;
+/* export default App; */
