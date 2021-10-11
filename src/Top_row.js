@@ -100,7 +100,7 @@ export default function Top_row() {
         break;
       case 11:
         image.src = a11;
-        break;  
+        break;
       case 12:
         image.src = a12;
         break;
@@ -116,7 +116,7 @@ export default function Top_row() {
       counter.count = counternumber - 1;
       setCounter(counter.count);
     }
-    identifyimage()
+    identifyimage();
     console.log("counter.count" + counter.count);
     console.log("counternumber" + counternumber);
     change.changer = 0;
@@ -130,7 +130,7 @@ export default function Top_row() {
       counter.count = counternumber + 1;
       setCounter(counter.count);
     }
-    identifyimage()
+    identifyimage();
     console.log("counter.count" + counter.count);
     console.log("counternumber" + counternumber);
     change.changer = 0;
@@ -149,7 +149,7 @@ export default function Top_row() {
           }}
         ></img>
         <img
-          src="1.png"
+          src=""
           alt="inspiration"
           className="inspiration"
           id="d20"
