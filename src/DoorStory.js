@@ -87,7 +87,7 @@ export default function Door(props) {
       let counterfunction = counter.count -1
       if (counterfunction < 0) {
         counterfunction=0
-        window.confirm("Looks like you do not have enough inspiration dice!")
+        window.confirm('"Perfection is achieved when there is nothing left to take away." Looks like you do not have enough inspiration dice.')
         setNumber("")
       }
       counter.count=counterfunction
