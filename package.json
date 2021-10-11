@@ -1,7 +1,7 @@
 {
   "name": "scss-react",
   "version": "0.1.0",
-  "homepage": "https://mariscotto.github.io/schneegestoeber/",
+  "homepage": "https://mariscotto.github.io/schneegestoeber",
   "private": true,
   "dependencies": {
     "-": "^0.0.1",
