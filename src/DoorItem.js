@@ -1,5 +1,5 @@
 import React from "react";
-import item from "./img/item.png";
+import item from "src/img/item.png";
 
 export default function Door(props) {
   function useStickyState(defaultValue, key) {

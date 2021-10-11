@@ -1,5 +1,5 @@
 import React from "react";
-import encounter from "./img/encounter.png";
+import encounter from "src/img/encounter.png";
 
 export default function Door(props) {
   function useStickyState(defaultValue, key) {
