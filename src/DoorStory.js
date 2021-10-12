@@ -1,120 +1,117 @@
 /* import React, { useState, useContext } from "react";
  */
-import React, {useContext} from "react"
-import story from "./img/story.png"
-import UserContext from "./Counter.js"
-import ChangeContext from './Change.js'
-
-
+import React, { useContext } from "react";
+import story from "./img/story.png";
+import UserContext from "./Counter.js";
+import ChangeContext from "./Change.js";
 
 function useStickyState(defaultValue, key) {
   const [value, setValue] = React.useState(() => {
-    const stickyValue = window.localStorage.getItem(key)
-    return stickyValue !== null ? JSON.parse(stickyValue) : defaultValue
+    const stickyValue = window.localStorage.getItem(key);
+    return stickyValue !== null ? JSON.parse(stickyValue) : defaultValue;
   });
   React.useEffect(() => {
-    window.localStorage.setItem(key, JSON.stringify(value))
-  }, [key, value])
-  return [value, setValue]
+    window.localStorage.setItem(key, JSON.stringify(value));
+  }, [key, value]);
+  return [value, setValue];
 }
 
-
 export default function Door(props) {
+  const isActivestore = "isActivestore" + props.shorttitle;
+  const contentstore = "contentstore" + props.shorttitle;
+  const numberrolledstore = "numberrolledstore" + props.shorttitle;
+  const inspirationcheckedstore = "inspirationcheckedstore" + props.shorttitle;
+  const nat20checkedstore = "nat20checkedstore" + props.shorttitle;
 
+  const [isActive, setActive] = useStickyState(true, isActivestore);
+  const [content, setValue] = useStickyState(null, contentstore);
+  const [numberrolled, setNumber] = useStickyState(" ", numberrolledstore);
+  const [inspirationchecked, setInsp] = useStickyState(
+    false,
+    inspirationcheckedstore
+  );
+  const [nat20checked, setCheck] = useStickyState(false, nat20checkedstore);
 
-  const isActivestore = "isActivestore"+props.shorttitle
-  const contentstore = "contentstore"+props.shorttitle
-  const numberrolledstore = "numberrolledstore"+props.shorttitle
-  const inspirationcheckedstore = "inspirationcheckedstore"+props.shorttitle
-  const nat20checkedstore = "nat20checkedstore"+props.shorttitle
-
-  const [isActive, setActive] = useStickyState(true, isActivestore)
-  const [content, setValue] = useStickyState(null, contentstore)
-  const [numberrolled, setNumber] = useStickyState(" ", numberrolledstore)
-  const [inspirationchecked, setInsp] = useStickyState(false,inspirationcheckedstore)
-  const [nat20checked, setCheck] = useStickyState(false, nat20checkedstore)
-
-
-  const counter = useContext(UserContext)
-  const change = useContext(ChangeContext)
-  const inspirationid="inspirationchecked"+props.shorttitle
-  const nat20id="nat20checked"+props.shorttitle
+  const counter = useContext(UserContext);
+  const change = useContext(ChangeContext);
+  const inspirationid = "inspirationchecked" + props.shorttitle;
+  const nat20id = "nat20checked" + props.shorttitle;
 
   const handleToggle = () => {
-    setActive(!isActive)
+    setActive(!isActive);
   };
 
-  React.useEffect(() => { 
-    let element = document.getElementById(inspirationid)
+  React.useEffect(() => {
+    let element = document.getElementById(inspirationid);
     if (inspirationchecked === true) {
-      element.setAttribute("checked","")
+      element.setAttribute("checked", "");
     } else {
-      element.removeAttribute("checked")
+      element.removeAttribute("checked");
     }
-  })
+  });
 
-  React.useEffect(() => { 
-    let element = document.getElementById(nat20id)
+  React.useEffect(() => {
+    let element = document.getElementById(nat20id);
     if (nat20checked === true) {
-      element.setAttribute("checked","")
+      element.setAttribute("checked", "");
     } else {
-      element.removeAttribute("checked")
+      element.removeAttribute("checked");
     }
-  })
-
+  });
 
   function changeContent(roll) {
-    let contentadditionalrolled
+    let contentadditionalrolled;
     if (roll < 7) {
-      contentadditionalrolled = props.contentadditional1
-      setValue(contentadditionalrolled)
+      contentadditionalrolled = props.contentadditional1;
+      setValue(contentadditionalrolled);
     } else if (roll > 6 && roll < 13) {
-      contentadditionalrolled = props.contentadditional2
-      setValue(contentadditionalrolled)
+      contentadditionalrolled = props.contentadditional2;
+      setValue(contentadditionalrolled);
     } else if (roll > 12 && roll < 18) {
-      contentadditionalrolled = props.contentadditional3
-      setValue(contentadditionalrolled)
+      contentadditionalrolled = props.contentadditional3;
+      setValue(contentadditionalrolled);
     } else if (roll > 17) {
-      contentadditionalrolled = props.contentadditional4
-      setValue(contentadditionalrolled)
+      contentadditionalrolled = props.contentadditional4;
+      setValue(contentadditionalrolled);
     } else {
-      return ""
+      return "";
     }
   }
 
   function Insp() {
     if (inspirationchecked === true && nat20checked === false) {
-      let counterfunction = counter.count -1
+      let counterfunction = counter.count - 1;
       if (counterfunction < 0) {
-        counterfunction=0
-        window.confirm('"Perfection is achieved when there is nothing left to take away." Looks like you do not have enough inspiration dice.')
-        setNumber("")
+        counterfunction = 0;
+        window.confirm(
+          '"Perfection is achieved when there is nothing left to take away." Looks like you do not have enough inspiration dice.'
+        );
+        setNumber("");
       }
-      counter.count=counterfunction
-      console.log("counter.count: "+counter.count)
-      const image = document.getElementById("d20")
-      image.src = counter.count + ".png"
-      change.changer = 1
-      console.log("change: "+change.changer)
+      counter.count = counterfunction;
+      console.log("counter.count: " + counter.count);
+      const image = document.getElementById("d20");
+      image.src = counter.count + ".png";
+      change.changer = 1;
+      console.log("change: " + change.changer);
     }
 
     if (nat20checked === true && inspirationchecked === false) {
-      let counterfunction = counter.count +1
-      if (counterfunction> 12) {
-        counterfunction = 12
+      let counterfunction = counter.count + 1;
+      if (counterfunction > 12) {
+        counterfunction = 12;
         window.confirm(
           '"The proximity of a desirable thing tempts one to overindulgence". You may not have more than 12 inspiration dice.'
         );
       }
-      counter.count=counterfunction
-      console.log("counter.count: "+counter.count)
-      const image = document.getElementById("d20")
-      image.src = counter.count + ".png"
-      change.changer = 1
-      console.log("change: "+change.changer)
+      counter.count = counterfunction;
+      console.log("counter.count: " + counter.count);
+      const image = document.getElementById("d20");
+      image.src = counter.count + ".png";
+      change.changer = 1;
+      console.log("change: " + change.changer);
     }
   }
-
 
   return (
     <div className="calender">
@@ -156,8 +153,7 @@ export default function Door(props) {
                 type="checkbox"
                 id={nat20id}
                 className="checkbox"
-                onClick={() => setCheck(!nat20checked)
-              }
+                onClick={() => setCheck(!nat20checked)}
               />
               <label htmlFor="nat201">Nat 20</label>
             </div>
