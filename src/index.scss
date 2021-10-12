@@ -356,13 +356,13 @@ h3 {
 //FOOTER
 
 .footer {
-  height: 100px;
   margin-top: 100px;
   background-color: var(--bg_blue);
   align-items: center;
   flex-direction: column;
   display: flex;
   justify-content: center;
+  padding: 20px;
 
   a {
     color: var(--primary-color);
