@@ -36,6 +36,10 @@ export default function Door(props) {
   const change = useContext(ChangeContext);
   const inspirationid = "inspirationchecked" + props.shorttitle;
   const nat20id = "nat20checked" + props.shorttitle;
+  const [counternumber, setCounter] = useStickyState(1, "counterstore")
+  const [changenumber, setChanger] = useStickyState(0, "changestore")
+  change.changer = changenumber
+  counter.count=counternumber
 
   const handleToggle = () => {
     setActive(!isActive);
@@ -89,10 +93,12 @@ export default function Door(props) {
         setNumber("");
       }
       counter.count = counterfunction;
+      setCounter(counter.count);
       console.log("counter.count: " + counter.count);
       const image = document.getElementById("d20");
       image.src = counter.count + ".png";
       change.changer = 1;
+      setChanger(change.changer);
       console.log("change: " + change.changer);
     }
 
@@ -105,10 +111,12 @@ export default function Door(props) {
         );
       }
       counter.count = counterfunction;
+      setCounter(counter.count);
       console.log("counter.count: " + counter.count);
       const image = document.getElementById("d20");
       image.src = counter.count + ".png";
       change.changer = 1;
+      setChanger(change.changer);
       console.log("change: " + change.changer);
     }
   }

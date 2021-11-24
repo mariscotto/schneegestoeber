@@ -19,12 +19,11 @@ export default function Top_row() {
     return [value, setValue]
   }
 
-  const counter=useContext(UserContext)
+  const counter = useContext(UserContext)
   const change = useContext(ChangeContext)
   const [counternumber, setCounter] = useStickyState(1, "counterstore")
-  counter.count=counternumber
-
-
+  const [changenumber, setChanger] = useStickyState(0, "changestore")
+  change.changer = changenumber
 
   React.useEffect(() => { 
     const image = document.getElementById("d20")
@@ -36,6 +35,7 @@ export default function Top_row() {
       image.src = counternumber + ".png";
       console.log("counternumber start"+counternumber)
       console.log("counter.count start"+counter.count)
+      console.log("change.changer start"+change.changer)
   })
 
   function onLoad(counter2) {
@@ -56,10 +56,17 @@ export default function Top_row() {
       counter.count= counternumber-1
       setCounter(counter.count)
     }
+    if (counternumber <= 0) {
+      setCounter(0)
+      window.confirm(
+        '"Perfection is achieved when there is nothing left to take away." Looks like you do not have enough inspiration dice.'
+      )
+    }
     image.src = counternumber + ".png";
     console.log("counter.count"+ counter.count)
     console.log("counternumber" + counternumber)
     change.changer=0
+    setChanger(change.changer)
   }
 
   function increase(){
@@ -71,10 +78,17 @@ export default function Top_row() {
       counter.count= counternumber+1
       setCounter(counter.count)
     }
+    if (counternumber >= 12) {
+      setCounter(12)
+      window.confirm(
+        '"The proximity of a desirable thing tempts one to overindulgence". You may not have more than 12 inspiration dice.'
+      )
+    }
     image.src = counternumber + ".png";
     console.log("counter.count"+ counter.count)
     console.log("counternumber" + counternumber)
     change.changer=0
+    setChanger(change.changer)
   }
 
 
