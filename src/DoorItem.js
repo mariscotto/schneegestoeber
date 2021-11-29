@@ -31,7 +31,7 @@ export default function Door(props) {
       </div>
       <div className={isActive ? "doorContentEmpty" : "doorContent"}>
         <p>{props.contentmain}</p>
-        <img src={props.image} alt="item" class="item"></img>
+        <img src={props.image} alt="item" class="item" width={props.image_width}></img>
       </div>
     </div>
   );

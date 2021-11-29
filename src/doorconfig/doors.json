@@ -1,215 +1,232 @@
 [
     {
         "doorType": 1,
-        "title":"title1",
+        "title":"Beginnings",
         "shorttitle":"1",
-        "contentmain":"contentstory1",
-        "roll":"Dexterity saving throw", 
-        "contentadditional1":"content+1",
-        "contentadditional2":"content+2",
-        "contentadditional3":"content+3",
-        "contentadditional4":"content+4"
+        "contentmain":"You are a student at the Hero Academy in Telos, the capital of the Vaasa region. Yesterday, Dec. 23 of the year 1045, your best friend at the academy, Aluin, an elven sorcerer, disappeared after going off to search the Bottomless Bogs for ingredients to make a potion for his final graduation project. The next day, he still hadn’t returned so you went out to look for him. You picked up his trail in the Bottomless Bogs, which first led you across Mirror Lake and the Great Glacier, and eventually brought you to a mountain cave in the Titan Peaks. As you began to explore the cave, something hit you in the back of the head and you passed out. Slowly, you wake up again… You feel a cold hardwood floor underneath you, a strangely familiar feeling. You smell freshly baked cinnamon cookies and the smell alone fills you with warmth and memories from your childhood. A cold breeze is coming from somewhere and it’s as if a single snowflake just fell on your nose. You feel dizzy and like your head is about to explode. It takes you a while to completely open your eyes and look around. This is confusing, weren’t you just somewhere in an ice cave high up in the mountains? Your memory since leaving your dorm room at the Academy this morning is a bit foggy and the more you try to recall what exactly happened, the stronger your headache gets. The room you are in right now looks almost exactly like your old room back at your parents’ home, a farmhouse near the village Avang. There is the closet, the old baby crib, the hand-drawn paintings of your mum on the wall, as well as the calendar and clock right by the door.",
+        "roll":"Wisdom saving throw", 
+        "contentadditional1":"You are captivated by your surroundings and every detail floods your senses. You think about how all this can be real but also, how could it possibly not be?",
+        "contentadditional2":"You are sure this is not real. Not real as in, this is not where your actual, living body is right now. It feels like one of those dreams of a distant dream that your mind constructs but you instantly forget when you wake up.",
+        "contentadditional3":"You’ve seen some powerful illusions during your time at the Hero Academy. The room you are in right now is not real, it’s a powerful, incredibly accurate illusion recreating events from the past.",
+        "contentadditional4":"You’ve seen some powerful illusions during your time at the Hero Academy. The room you are in right now is not real, it’s a powerful, incredibly accurate illusion recreating events from the past. But there’s more behind it. It’s like somebody is poking around in your brain trying to access your memories. Who is it and why is this happening to you?"
     },
     {
         "doorType": 2,
-        "title":"title2",
+        "title":"Just like home",
         "shorttitle":"2",
-        "contentmain":"contentitem2", 
-        "image":"thisisaniamge"
+        "contentmain":"You take a closer look at the calendar. The day marked there is “24.12.1025”. This is the day you were born, on the day of the Snow Festival, a day every child in Vaasa looks forward to because there are lots of celebrations in town and kids traditionally get presents from the Yule Father put in front of their doors. The mythical Yule Father is said to reside somewhere in the Titan Peaks. You move to the crib, almost expecting a small version of yourself lying in there. The crib is empty, except for a beautiful ice blue flower with star-shaped petals and a strange, sparkling glow. It looks like one of those rare flowers that grow in the mountains. You don’t remember its name at the moment, but you have seen it before, for sure. Finally, you go to the closet and open it. None of your childhood clothes are hanging there, instead, your adult-sized armor, as well as all the weapons you started your rescue expedition with, are hanging neatly from the rack. Right, you need to find Aluin. You don’t know what this craziness means, but you know getting Aluin back is what counts. There are two options now, going out of the door or the open window. Almost as if guided by an invisible force, you move towards the door and open it. You now have access to your weapons and armor in your inventory.", 
+        "image":"item2.png",
+        "image_width":"100px"
     },
     {
         "doorType": 1,
-        "title":"title3",
+        "title":"Wishlist",
         "shorttitle":"3",
-        "contentmain":"contentstory3",
-        "roll":"Dexterity saving throw", 
-        "contentadditional1":"content+1",
-        "contentadditional2":"content+2",
-        "contentadditional3":"content+3",
-        "contentadditional4":"content+4"
+        "contentmain":"As soon as you leave the room, the door slams shut behind you. You step into another room that, again, looks and feels just like the one in your childhood home. Some of the furniture changed, the crib was replaced with a small bed and the calendar is also new. On a small desk, you notice some pieces of paper lying around. Intrigued by what is written on them, you pick one up. At the top of the paper, it says “Wishlist Snow Festival and birthday 1030”. Below, there is a list of items a younger version of you apparently wished for.",
+        "roll":"Intelligence ability check", 
+        "contentadditional1":"You gave few thoughts to your wish list and wrote down the first things that came to your mind.",
+        "contentadditional2":"You've given some thought to your wish list and you've come up with some things you want.",
+        "contentadditional3":"The other day, a merchant selling magical artifacts came to the farm for the first time. He said he's traveling around the region this year in the month before the Snow Festival. So you quickly wrote your wish list and listed only the best magic artifacts you could think of. ",
+        "contentadditional4":"The other day, a merchant selling magical artifacts came to the farm for the first time. He said he's traveling around the region this year in the month before the Snow Festival. So you quickly wrote your wish list and listed only the best magic artifacts you could think of. But which item on the wishlist do you desire the most?"
     },
     {
         "doorType": 2,
-        "title":"title4",
+        "title":"Surprise!",
         "shorttitle":"4",
-        "contentmain":"contentitem4", 
-        "image":"thisisaniamge"
+        "contentmain":"After you studied the list, you hear knocking coming from the door opposite of you (not the one you came from). For a moment, you stop and feel unsure about what to do. Then, as if moved by the invisible force you already felt earlier, you move towards the door and open in. Right in front of the door, you find a present wrapped in a red bag and decorated with a thin yellow string. You open it and find exactly what was written on your wishlist.", 
+        "image":"item2.png",
+        "image_width":"100px"
     },
     {
         "doorType": 1,
-        "title":"title5",
+        "title":"The disappearance",
         "shorttitle":"5",
-        "contentmain":"contentstory5",
-        "roll":"Dexterity saving throw", 
-        "contentadditional1":"content+1",
-        "contentadditional2":"content+2",
-        "contentadditional3":"content+3",
-        "contentadditional4":"content+4"
+        "contentmain":"Again, the door you just walked through slams shut behind you. The room you are standing in feels like your old childhood room, but a much more recent version of it. There are holiday decorations mounted on the walls and cards from your favorite card game as a kid are scattered on the floor. In fact, it was not really your favorite card game, it was Nicolay’s favorite game to play. Nicolay was your best friend for the first couple of years of school. You got along great and had lots of fun and adventures around the countryside. Your and Nic’s birthday was even on the same day, the day of the Snow Festival. Still, as fun as Nic was, he could be as stubborn as a rock sometimes. You crouch down to pick up the cards from the floor and as you look at the calendar, you suddenly remember exactly what happened that day. You and Nic were playing cards and had a discussion about the Yule Father, as you typically do when you’re 8 years old. It all turned into a big fight, however, since Nic insisted that the Yule Father actually exists, while you knew that merchants were bringing the presents for the kids in the valley and leaving them on the front porch, instead of some mythical creature. Nic got terribly upset and left the room, slamming the door behind him. You remember what happened afterward, and rush to the door at the opposite side of the room, flinging it wide open. Just like it happened so many years ago you rush down the stairs, right through the living room and the front door.",
+        "roll":"Perception ability check", 
+        "contentadditional1":"There is no sign of Nic however and the cold winter breeze howling over the countryside is starting to turn into a blizzard. You sigh and remember, just like it happened on the day Nic would vanish forever.",
+        "contentadditional2":"You see small footprints in the fresh snow, leading from your house towards the Bottomless Bogs. After a couple of meters however, there is no trace of your friend. You look outside and shout his name, but still no sign of Nic.  And now the cold winter breeze howling over the countryside is starting to turn into a blizzard. You sigh and remember, just like it happened on the day Nic would vanish forever.",
+        "contentadditional3":"You see a small silhouette running out to the fields. Nic is now out the front door, and you just manage to stop it from slamming as well. Nic runs into the fields toward the Bottomless Bogs, shouting 'I'll prove it to you yet!' As he enters the swamp, a cold breeze picks up and it begins to snow. You run after Nic, calling out for him, but you don't find him in the snow fall that quickly develops to be more of a blizzard. You wander around aimlessly until you reach the point where you entered the swamp again, see your house and head back towards home, just like it happened on the day Nic would vanish forever.",
+        "contentadditional4":"You see a small silhouette running out to the fields. Nic is out the front door, and you just manage to stop it from slamming as well. Nic runs into the fields toward the Bottomless Bogs, shouting 'I'll prove it to you yet!' As he enters the swamp, a cold breeze picks up and it begins to snow. You run after Nic, calling out for him, but you don't find him in the snow fall that quickly develops to be more of a blizzard. You wander around aimlessly until you reach the point where you entered the swamp again and see your house. As you take one last look over your shoulder at the Bottomless Bog, you see the outline of a humanoid figure that looks like an old woman bending over a young boy looking up at her. With the next gust of wind, the figures disappear. You head back to the house, just like it happened on the day Nic would vanish forever."
     },
     {
         "doorType": 2,
-        "title":"title6",
+        "title":"Presents",
         "shorttitle":"6",
-        "contentmain":"contentitem6", 
-        "image":"thisisaniamge"
+        "contentmain":"As you reach the front porch of your house, you notice two bags on the porch. They are wrapped as you would traditionally wrap presents in Vaasa, with golden and red strings. You don’t remember them being there the night Nic disappeared. Even though you know you should open the door and go inside, you feel a weird desire to open both presents, immediately. You open the first one and find a Viola inside.", 
+        "image":"item6.jpg",
+        "image_width":"20%"
     },
     {
         "doorType": 3,
-        "title":"title7",
+        "title":"All living things",
         "shorttitle":"7",
-        "contentmain":"contentencounter7",
-        "contentadditional":"content+"
+        "contentmain":"You open the second present. Inside it, you see a long, purple tongue. Before you can fully come to terms with the contents of the present, you feel a sharp sting in your right hand that is holding the top of the bag. Suddenly you realize the bag has developed a line of long, sharp teeth around its opening. You are attacked by a mimic.",
+        "contentadditional":"The struggle is short but it leaves you with some nasty bruises and bite marks. In the end, you defeat the mimic and are left with a destroyed present bag on the porch of your parents’ place [you gain one level]. You step over the mess of the destroyed mimic and walk through the front door."
     },
     {
         "doorType": 1,
-        "title":"title8",
+        "title":"The box in the attic",
         "shorttitle":"8",
-        "contentmain":"contentstory8",
-        "roll":"Dexterity saving throw", 
-        "contentadditional1":"content+1",
-        "contentadditional2":"content+2",
-        "contentadditional3":"content+3",
-        "contentadditional4":"content+4"
+        "contentmain":"The door you just walked through slams shut. On the other side of the door, you don’t see the living room you would have expected to be there, but, again, your old room. On the walls, you see drawings of famous heroes, people you idolized when you were a teenager. Looking at the calendar you realize that the disappearance of your best friend was already four years ago. Everyone was looking for Nic for a long time that evening and for several weeks following his disappearance but he was never found. Still, you never gave up hope of finding him again. On your desk, you see an old, ornamented and fairly small chest. You recognize the chest and think you even remember the day you found it. You had just moved some of your old childhood things into the attic and there you found an old box with a note on it. On the note, there was your name written on it. You had never seen this chest before so you brought it down to your room and put it on the desk, where it rests now, right in front of you. You step closer and open it.",
+        "roll":"Investigation ability check", 
+        "contentadditional1":"The first thing you find in the chest are a bunch of letters. Unfortunately, the letters are so old and yellowed that you can no longer read them properly.",
+        "contentadditional2":"The first thing you find in the chest are a bunch of letters. The letters are correspondences between your parents and a woman named 'Boginia'. They don’t seem to have anything to do with you though. You are confused as to why your name was written on the note.",
+        "contentadditional3":"The first thing you find in the chest are a bunch of letters. The letters are correspondences between your parents and a woman named 'Boginia'. She apparently advised them to put a Winter Diamond flower in their baby's crib as a good omen for the health of the offspring. Your parents took the advice and shortly after, you were born.",
+        "contentadditional4":"The first thing you find in the chest are a bunch of letters. The letters are correspondences between your parents and a woman named 'Boginia'. She apparently advised them to put a Winter Diamond flower in their baby's crib as a good omen for the health of the offspring. Your parents took the advice and shortly after, you were born. The letters Boginia wrote are written in a strange spidery script. Because of the writing and her choice of words, you would guess that Boginia is one of the glacial witches who lives in the Titan Peaks. You would guess that your parents, being regular farmers, suspected nothing bad of her, but you know glacier witches can't be trusted."
     },
     {
         "doorType": 2,
-        "title":"title9",
+        "title":"The black book",
         "shorttitle":"9",
-        "contentmain":"contentitem9", 
-        "image":"thisisaniamge"
+        "contentmain":"Inside the chest, beneath all the letters, you also find a book with a leathery, black cover. As you open the book, you notice the pages are all empty. As you turn the pages, a pressed flower falls out of a page. You pick it up and inspect it. It’s the same flower you found in your old crib earlier today. Now you remember the name: it’s a Winter Diamond flower. They don’t grow in a lot of places but a common spot to find them is usually high up in the mountains. You put the flower in your backpack and the invisible force you already noticed before guides your gaze towards the door on the closer side of the room. Of course, you move towards it and open it.", 
+        "image":"item9.jpg",
+        "image_width":"18%"
     },
     {
         "doorType": 1,
-        "title":"title10",
+        "title":"Leaving home",
         "shorttitle":"10",
-        "contentmain":"contentstory10",
-        "roll":"Dexterity saving throw", 
-        "contentadditional1":"content+1",
-        "contentadditional2":"content+2",
-        "contentadditional3":"content+3",
-        "contentadditional4":"content+4"
+        "contentmain":"Again, you’re in your room, but this one is the most recent version of it. In fact, it’s the way you remember your room to look like as you left to move to Telos City to start your studies at the Academy. A quick glance at the calendar confirms this. The day of the Snow Festival, 1043. All your things are packed in chests and bags. After the holiday, your parents would escort you to the Academy on the big horse-drawn cart. This meant a big change, of course, one that would come with lots of opportunities, but also dangers and insecurities. You didn’t quite know what to expect back then, but you know your parents were very anxious about it. They had been anxious about you ever since the day Nic disappeared in the blizzard. Recently, however, they became a bit more relaxed, as your features started to turn more into those of an adult, and you became a reliable and much-appreciated help on the farm. As you walk through the room you remember the stress of those days and how you tried thinking about everything before you left.",
+        "roll":"Survival ability check", 
+        "contentadditional1":"That, of course, failed. You did remember to pack some things. You forgot many others, your toothbrush, your belt, your winter coat, among other things. Thinking about how many times you had to travel from the Academy and back, just to get all your stuff together, brings a smile to your face. Your parents weren’t too sad about it, it just meant they saw you more often, which they, secretly, really appreciated.",
+        "contentadditional2":"Indeed, you did remember to pack the most important things. All the other stuff you needed were just commonly sold items you eventually bought on campus. This is actually how you met Aluin. He also had to buy a bunch of things he forgot to bring from his elven home.",
+        "contentadditional3":"Indeed, you thought of everything, but in the end, you also packed way too many things. In the first couple of weeks, your room at the Academy was full with stuff you didn’t really need. However, this lead you to being able to help out lots of your fellow students with things they forgot. This is actually how you met Aluin. He was freaking out because he forgot his crystal ball at home and it would have taken weeks for it to arrive if they sent it to the Academy. You felt very sorry for the tall, gangly elf with big, rounded glasses and lent him your crystal ball, a gift you once got from a traveling elven merchant.",
+        "contentadditional4":"Indeed, you thought of everything, and left anything you didn’t need at home. You even thought of having a yard sale of all the things you knew you didn’t need anymore. A lot of these were child games you used to play a lot but don’t anymore. Among these were the set of playing cards that were Nic’s favorite. You had stopped for a moment before putting them on the “for sale” table outside in the yard. There was a soft breeze picking up in the yard that made the cards in your hand tremble. You heard a soft whisper “She’s not getting you, I promise” but as you turned around to identify where the whisper came from, you didn't see anybody in the yard. "
     },
     {
         "doorType": 2,
-        "title":"title11",
+        "title":"Frozen Flames",
         "shorttitle":"11",
-        "contentmain":"contentitem11", 
-        "image":"thisisaniamge"
+        "contentmain":"Back in the room with the chests and bags on moving day, you feel as if you have seen enough in this room and you move forward to open the door. On the other side, you step outside into the yard belonging to the farmhouse. As the door slams shut, you feel the cold winter air piercing through your clothes. You hear the girls from the neighbor’s farm playing and singing Snow Festival songs in the distance. On the porch, you notice a small present. It is wrapped in paper of an icy blue color. You remember these kinds of presents very well. They started appearing on the porch of people’s homes in the valley some time ago, always on the day of the Snow Festival, as tradition required. However, these presents were very different from the ones the merchants were distributing up to that point. You pick the present up and open it, tearing the wrapping paper carefully apart. Inside, you find a figurine that looks like the typical depiction of Father Yule, with a long beard and a big bag over his shoulder. The figurine is about the size of your hand and cold to the touch. It looks as if it were made of ice but your body heat doesn’t seem to affect it. It doesn’t melt any bit when you hold it in your hands. Inside of the figurine, there is what looks like a flame twirling around the hollowed-out statue, almost as if it performed an intricate dance to break free of its icy prison. You smile, thinking of all the kids who had received the figurines that year, each one was different but with the same twirling flame inside. You had asked your parents about this figurine and said you were probably a bit too old to receive gifts on the porch this year. Your parents were confused and swore they hadn’t bought it for you. Must have been a merchant who felt especially charitable then or maybe the figurines were advertisements for a new magic show in town? You put the figurine in your backpack and go back inside through the front door.", 
+        "image":"item2.png",
+        "image_width":"18%"
     },
     {
         "doorType": 1,
-        "title":"title12",
+        "title":"The Bottomless Bogs",
         "shorttitle":"12",
-        "contentmain":"contentstory12",
-        "roll":"Dexterity saving throw", 
-        "contentadditional1":"content+1",
-        "contentadditional2":"content+2",
-        "contentadditional3":"content+3",
-        "contentadditional4":"content+4"
+        "contentmain":"You step through the front door and find yourself not in a room, but in the middle of what looks like the Bottomless Bogs. Surprised, you turn back around to where you just heard the door slam shut behind you. There is no door. It’s just you, standing in the open field in the Bogs in the middle of the night. You almost can’t believe it. Everything, the stars, the trees, the sounds of the Bog critters, everything feels exactly like it did the morning before sunrise when you started your expedition to find Aluin. Was it this morning? A day ago? A week ago? You are not sure anymore. In front of you, you see a trail of footsteps in the snow. They have the same size and shape as your footsteps. You’ve been here before, exactly where you started. You feel frustration and anger flare up inside of you with the memory of losing Nic being so recently revived. What is it anyway with your best friends disappearing on the same day, the Snow Festival, your birthday, yours and Nic’s birthdays? Is it some kind of sick joke? What is this? You scream into the night Where the fuck am I? Aluin? Nic? The mountain cave. What the hell did you find in it, a cave troll, a powerful illusionist, death itself? As you send clouds of warm breath into the freezing cold air, you feel as isolated and alone as never before. You don’t notice something wrapping their cold hands around your ankle until it yanks you down and you fall to the ground.",
+        "roll":"Strength saving throw", 
+        "contentadditional1":"You desperately try to escape the grip, but can’t. A flash of pain shoots through your leg. Take 1d4 bludgeoning damage.",
+        "contentadditional2":"You desperately try to escape the grip, but can’t. Whatever is holding you is much stronger than you.",
+        "contentadditional3":"You desperately try to escape the grip, but can’t. Instead of flailing around, you try to regain composure, just as they taught you at the Academy, and identify your attacker. It almost looks like a shambling cluster of shards of ice. Very sharp shards of ice that are now moving quickly towards you.",
+        "contentadditional4":"You desperately try to escape the grip, and land a kick right on whatever grabbed hold of your ankle. You see a cluster of ice shards shambling on the snow. You hurt it, but it seems to regroup quickly and grow into a full-sized ice elemental."
     },
     {
         "doorType": 3,
-        "title":"title13",
+        "title":"Bitter coldness",
         "shorttitle":"13",
-        "contentmain":"contentencounter13",
-        "contentadditional":"content+"
+        "contentmain":"A battle takes place between you and the creature.",
+        "contentadditional":"You got hurt, and the pain feels real. In the end, you destroy the ice elemental and it shatters into a million harmless pieces of ice [you gain one level]. As you sit down, exhausted, and watch the pile of ice for a few seconds, just in case it makes any unexpected movement, you discover a flower on a small heap just behind where you destroyed the ice elemental."
     },
     {
         "doorType": 2,
-        "title":"title14",
+        "title":"Ghost bloom flower",
         "shorttitle":"14",
-        "contentmain":"contentitem14", 
-        "image":"thisisaniamge"
+        "contentmain":"You recognize the flower instantly. It’s the ghost bloom flower, the one Aluin told you about so many times. He said the Bottomless Bogs was the only place in the area where it grew and he needed it for his final project. This is why he left; because he wanted to get this flower. What did he tell you again exactly? If eaten raw, the flower would help make you stronger temporarily, and if cooked or brewed, it could be used as a potion of lesser invisibility. It could be helpful to you, so you put it in your backpack and continue on the same exact way you had figured out Aluin must have gone the first time you were here. You have the strong suspicion that whatever answers you search for must be hidden somewhere in a mountain cave.", 
+        "image":"item14.jpg",
+        "image_width":"18%"
     },
     {
         "doorType": 1,
-        "title":"title15",
+        "title":"Mirror Lake",
         "shorttitle":"15",
-        "contentmain":"contentstory15",
-        "roll":"Dexterity saving throw", 
-        "contentadditional1":"content+1",
-        "contentadditional2":"content+2",
-        "contentadditional3":"content+3",
-        "contentadditional4":"content+4"
+        "contentmain":"You eventually leave the Bottomless Bogs without further complications and reach the frozen Mirror Lake. When you were here before, you remember asking yourself if you should take the shortest route and go straight over the frozen lake or rather hike around the lake through the forest.",
+        "roll":"Nature ability check", 
+        "contentadditional1":"Back then you thought the ice on the lake would definitely sustain you. Was this a good idea? Your memory seems to fade and usually you would take a second to reconsider and try to remember, but now the invisible force you already experienced so many times before makes you feel like a puppet. You have to cross this lake, just like you did before. Right at the center of the lake, the ice suddenly cracks. If you stand still now, the ice will eventually break and you will sink to the bottom of the lake with all your equipment. You start in a desperate sprint with all the ice plates you stepped on breaking right after you lift your feet from them. Luckily, you make it to the edge of the lake, but you’re out of breath and your coat got wet and is freezing. Reduce your CON stat by one.",
+        "contentadditional2":"Back then you thought the ice on the lake would probably sustain you. You start out carefully, gradually putting your weight on the ice. It seems to hold and you continue step by step, listening for any noise of anything cracking. When you reach the middle of the lake, you know you have to be careful. This looks like the thinnest ice plate of the entire lake. Right at the center of the lake, the ice suddenly cracks. Your right foot sinks into the lake, but the rest of the ice plate remains intact. You reach the other side of the lake mostly dry.",
+        "contentadditional3":"Back then you thought the ice on the lake would probably sustain you, at least the outer part of the ice ring. You avoid the center portion of the lake, since that looks way too thin to sustain you. You reach the other side of the lake completely dry.",
+        "contentadditional4":"Back then you thought the ice on the lake would probably sustain you, at least the outer part of the ice ring. You avoid the center portion of the lake, since that one looks way too thin to sustain you. You reach the other side of the lake completely dry. Between the high grass you spot another ghost bloom flower, which you pluck and put into your backpack."
     },
     {
         "doorType": 2,
-        "title":"title16",
+        "title":"The crystal ball",
         "shorttitle":"16",
-        "contentmain":"contentitem16", 
-        "image":"thisisaniamge"
+        "contentmain":"As you move towards the Great Glacier and the Titan Peaks, you remember being unsure about where Aluin went exactly. You tracked him by following his distinct magical aura like a scent, but it became fainter and fainter the longer you tracked it. If you had anything that was bound to him, it would be much easier to follow the scent. You were thinking of various ways to solve this problem, as you suddenly bumped against something hard while stomping through the soft snow. You hit it again with your foot. It doesn’t seem to move, what was the thing you found here again? It’s on the tip of your tongue, but your memory is foggy. Remembering was of no use, so you crouch down into the snow and start digging. Eventually, you discover Aluin’s crystal ball. The one he always carried with him in his sorcerer bag, the one you lent him and eventually ended up giving him as a gift in the first year of the Academy. This would work perfectly as a tracking device and who knows, maybe it would even have some other practical use for you, it was a magic crystal ball after all! At the same time, you feel a growing sense of concern for Aluin. He would never leave his crystal behind, something terrible must have happened to him. You hope you aren’t coming too late.", 
+        "image":"item16.jpg",
+        "image_width":"13%"
     },
     {
         "doorType": 1,
-        "title":"title17",
+        "title":"The hut",
         "shorttitle":"17",
-        "contentmain":"contentstory17",
-        "roll":"Dexterity saving throw", 
-        "contentadditional1":"content+1",
-        "contentadditional2":"content+2",
-        "contentadditional3":"content+3",
-        "contentadditional4":"content+4"
+        "contentmain":"You continue on over the Great Glacier. In the far distance, you can see the end of the glacier and the beginning of the Titan Peaks. Interestingly, you spot a small hut right on the edge of the glacier and the mountains. Aluin’s trail seems to lead in exactly that direction. Glacier witches… you mutter under your breath. This doesn’t look great for Aluin, and neither for you.",
+        "roll":"History ability check", 
+        "contentadditional1":"You have heard about the Glacier witches that live around here, but just rumours, like they had horns and hooves, and in general looked a lot like devils. These were just stories around town though, nobody had actually seen one such witch in person.",
+        "contentadditional2":"You know something about Glacier witches since it came up in one of your Academy classes. They don’t form covenants, they prefer living alone and form a strong bond with the environment around them.",
+        "contentadditional3":"You know something about Glacier witches since it came up in one of your Academy classes. They don’t form covenants, they prefer living alone and form a strong bond with the environment around them. They know exactly how to survive in the freezing cold and use each creature and plant around them to get exactly what they want. In general, they are known as ruthless and deceptive, not to be trusted since they always and exclusively look out for their own good.",
+        "contentadditional4":"You know something about Glacier witches since it came up in one of your Academy classes. They don’t form covenants, they prefer living alone and form a strong bond with the environment around them. They know exactly how to survive in the freezing cold and use each creature and plant around them to get exactly what they want. In general, they are known as ruthless and deceptive, using lots of illusionary magic to get into their victim’s heads and weaken them. They are not to be trusted since they always and exclusively look out for their own good."
     },
     {
         "doorType": 2,
-        "title":"title18",
+        "title":"Cottagecore",
         "shorttitle":"18",
-        "contentmain":"contentitem18", 
-        "image":"thisisaniamge"
+        "contentmain":"Slowly and carefully, you approach the hut from the forest where you can hide behind some bushes. It is very possible that the witch had seen you before when you crossed the glacier, but maybe you are lucky, maybe she didn’t. You move a bit closer, as you can see light emitted from several candles inside the hut. Other than the flames of the candles, nothing moves inside. It is tempting, coming inside, it must be so warm, so comfortable, so nice you would never want to leave again. You do feel the cold now more than you ever had, your knees start shaking as you move towards the hut, and the warmth, and the pleasant smell and sound of a soup already starting to boil inside. Walking through what looked like a herb garden, you notice a beautiful sickle hanging from the fence, probably used to cut the herbs and grass in the area. Even though you want to enter the hut as quickly as possible, you still reach out and grab the sickle. Before you put it away into your coat, you notice an engraving on the sickle that said “Boginia”. If the witch is making soup, maybe she’ll need some freshly cut herbs for seasoning?", 
+        "image":"item18.jpg",
+        "image_width":"18%"
     },
     {
         "doorType": 1,
-        "title":"title19",
+        "title":"Entering the witch’s den",
         "shorttitle":"19",
-        "contentmain":"contentstory19",
-        "roll":"Dexterity saving throw", 
-        "contentadditional1":"content+1",
-        "contentadditional2":"content+2",
-        "contentadditional3":"content+3",
-        "contentadditional4":"content+4"
+        "contentmain":"You open the door to the hut. Inside, you see the candles you already saw from outside, but while stepping in, you also see the ceiling, and about hundreds and hundreds of winter diamond flowers hanging from there. Some still have their sparkling ice blue color that reflects the candlelight, others are already dried and hang lifeless from the ceiling. In the back of the cabin, there is a creature looking like a human woman. Well, almost human. As she moves her right arm back and forth monotonously, you notice her dark blue skin on her boney arm. She is stirring a liquid inside a big black cauldron. You have surely been standing there for a couple of moments, but she still has to acknowledge your existence. You decide to talk first.",
+        "roll":"Charisma saving throw", 
+        "contentadditional1":"You take a few steps forward, put a weapon to the witch’s throat and say “I’m looking for someone … a friend. He was here before, tell me where he is now.”",
+        "contentadditional2":"You take a few steps forward, put a weapon to the witch’s throat and say “I don’t want to hurt you. I’m looking for my friend Aluin, an elven sorcerer who is missing. He came here to your hut not long ago. Just tell me where he is now and I’ll be on my way.”",
+        "contentadditional3":"You stay right where you are and say “Excuse me Ma’am, I’m looking for my friend Aluin, an elven sorcerer who is missing. I know he came here to your hut not long ago. Do you know where he is now? And don’t try any tricks on me, I know your kind.”",
+        "contentadditional4":"You stay right where you are and say “Excuse me Ma’am, I’m looking for my friend Aluin, an elven sorcerer who is missing. I know he came here to your hut not long ago. Do you know where he is now? And don’t try any tricks on me, I know your kind. While I am very impressed by you and the wonders you can most likely conjure, I am not to be underestimated or toyed with.”"
     },
     {
         "doorType": 3,
-        "title":"title20",
+        "title":"The Glacier witch",
         "shorttitle":"20",
-        "contentmain":"contentencounter20",
-        "contentadditional":"content+"
+        "contentmain":"A battle takes place between you and the witch.",
+        "contentadditional":"The witch immediately starts to giggle, then cackle. “You human children always amuse me, you truly do.” She turns around, her silvery horns shining in the candlelight and her grimace sending shivers down your back. “I’ve been trying for years to get to you, my lovely marked one, and over the years, I got hold of everyone of my marked ones, except for you. And now, you are the one coming to me, unannounced, breaking into my home, and making demands. Enjoy your sleep. When you’ll wake up, you’ll be at the Court of the Prince and you’ll be his servant, for the rest of your life.” A big fight ensued, where you trashed her entire cottage, spilled her brew, got burned, frozen, paralysed and much more. In the end, you plunged your weapon through her heart and under her breath she muttered “The Receptacle, it will avenge me. You can’t save them, any of them.” before succumbing to her wounds [you gain one level]. Exhausted, but more determined than ever to find Aluin, you walk out of the cottage, with dark blue blood all over you."
     },
     {
         "doorType": 1,
-        "title":"title21",
+        "title":"Crystal Cave",
         "shorttitle":"21",
-        "contentmain":"contentstory21",
-        "roll":"Dexterity saving throw", 
-        "contentadditional1":"content+1",
-        "contentadditional2":"content+2",
-        "contentadditional3":"content+3",
-        "contentadditional4":"content+4"
+        "contentmain":"You walk past the herb garden and try to figure out where Aluin went from here. You know you were in this exact spot already, you walked through the herb garden, you had even fought the witch once before. However, every time you try to reach those memories, they fade out of your grasp. The best choice is still to move forward. Aluin’s trace picks up next to the hut and follows a mountain path. The path is quite rocky and everything is covered in snow, making it hard to hold on to anything or accurately identify where to place your feet next.",
+        "roll":"Athletics ability check", 
+        "contentadditional1":"When climbing up a steep portion of the trail, your left foot slips and you lose balance. You fall down a couple of meters. Roll 1d6 bludgeoning damage.",
+        "contentadditional2":"When climbing up a steep portion of the trail, your left foot slips and you lose balance. You fall down a couple of meters. Luckily, you are not injured, but you fell right on your backpack.  Create a numbered list of all your items. Roll 1dx (x = amount of items). That item is now broken.",
+        "contentadditional3":"You climb even the steeper portions of the trail easily. The exercise schedule at the Academy was tough, but you never skipped a single session.",
+        "contentadditional4":"You climb even the steeper portions of the trail easily. In fact, it makes you eager for what’s coming next, to find and bring justice to whoever is responsible for the disappearance of Aluin. Your muscles are all warmed up now anyways. Add +1 to your strength modifier."
     },
     {
         "doorType": 1,
-        "title":"title22",
+        "title":"Falling asleep… and waking up",
         "shorttitle":"22",
-        "contentmain":"contentstory22",
+        "contentmain":"At the end of the path, you finally see it, the mountain cave. Looking so familiar, but yet so strange. You have no idea what is waiting for you inside. Whoever or whatever is in there, they better be afraid. The inside of the cave is full of icicles. Some hanging from the ceiling, others growing from the ground. There is a strange, ice blue glow coming from further inside the cave and you feel attracted to it, like a moth to the light. *Isn’t this where...wait!* You thought just before something hits you in the end and you lose consciousness. Now, it feels like you finally reached the end … of a movie, a memory, your life? No, you feel alive, you definitely feel alive. And awake. You feel like you are lying down and you feel the cold hardwood floor beneath you. No, that isn’t right, that was before, this is now, this is real. You open your eyes wide. You stare right at a wall of ice, and the wall stares back. Underneath you, you feel ice as well. Looking more closely at the wall of ice, you notice it is not one block of ice but rather made out of hundreds of little ice splinters. As you watch closely, you can see a faint reflection of a person in each of the splinters. Suddenly, the ice block moves and you notice that it is a huge humanoid giant made of ice. Certainly, it is three times your size. The creature stops moving and speaks with a voice coming from nowhere and anywhere at once. It sounds like a solemn choir of hundreds of voices, some old, some young, female voices and male voices: „You came. The Receptacle is looking forward to welcoming you inside of us. Please prepare to leave your body. If you resist, you will be killed.”",
         "roll":"Dexterity saving throw", 
-        "contentadditional1":"content+1",
-        "contentadditional2":"content+2",
-        "contentadditional3":"content+3",
-        "contentadditional4":"content+4"
+        "contentadditional1":"You try to concentrate on identifying the faces you saw in the splinters. You recognize one of them. It’s a girl from a farm close to your parent’s house, who disappeared in the Bogs around the time of the Snow Festival.",
+        "contentadditional2":"You try to concentrate on identifying the faces you saw in the splinters. When you see Nic’s face, you freeze. It’s there for just a moment, then you can’t see him any more.",
+        "contentadditional3":"You try to concentrate on identifying the faces you saw in the splinters. When you see Nic’s face, you freeze. He looks anxious, worried, but also highly concentrated.",
+        "contentadditional4":"You try to concentrate on identifying the faces you saw in the splinters. When you see Nic’s face, you freeze. He looks anxious, worried, but also highly concentrated. His lips move and you hear a voice inside of your head “Don’t worry. We’ll destroy the Receptacle together. Then, we’ll all be free!”"
     },
     {
         "doorType": 2,
-        "title":"title23",
+        "title":"Ice Gallery",
         "shorttitle":"23",
-        "contentmain":"contentitem23", 
-        "image":"thisisaniamge"
+        "contentmain":"You jump up, ready to fight. There is no way in hell you are joining this monstrosity standing before you. Just as you were taught at the Academy, you scan your surroundings. You gasp at the vastness of the cave around you. In the walls, there are hundreds of smooth pieces of ice blocks emitting a faint ice blue light. Looking closer, you see each of those ice blocks has a creature enclosed inside. You see a lot of children, but also adults, elves, humans, dwarfs, all kinds of creatures. In one corner of the cave, you see what looks like a makeshift shelf and workbench. Sitting on the shelf, there are countless little glass figurines, all of different shapes, all with a small flame twirling inside them. Now, there is no more time to lose. You see your weapons placed next to the slab of ice you were just laying on and grab them.", 
+        "image":"item2.png",
+        "image_width":"18%"
     },
     {
         "doorType": 3,
-        "title":"title24",
+        "title":"The Ice Monster of Many Faces",
         "shorttitle":"24",
-        "contentmain":"contentencounter24",
-        "contentadditional":"content+"
+        "contentmain":"A battle takes place between you and the ice monster",
+        "contentadditional":"At first, you are somewhat hesitant to fight the monster. You see so many faces of people trapped inside it, you don’t want to risk hurting them. After a while, you start to notice some of the faces inside the ice splinters of the monster look exactly like some of the people trapped inside the ice blocks on the cave walls. Anyway, you have little choice, if you do not weaken the monster quickly, it will kill you, or worse. You don’t want to end up in an ice block. The fight is hard and drawn-out. It is as if the monster knows all the tricks of the witch and also the ice elementals and executes them perfectly. You think back to your training, do everything by the book and improvise here and there, until the ice monster is finally destroyed. With one clean swoop of your weapon, you slide into the monster, breaking it in half. There is an explosion of energy and for a second, all you can see is white light, and all you can hear is a buzzing coming from everywhere and nowhere at the same time."
+    },
+    {
+        "doorType": 2,
+        "title":"Epilogue",
+        "shorttitle":"25",
+        "contentmain":"When you can finally see again, you see the monster, now just a chunk of ice, on the floor motionlessly. You look at the people in the ice blocks, and for a second, nothing moves and no sound is made. Suddenly, you hear glass break, once, twice, more and more, as the creatures inside the ice blocks wake up and punch through the thin layer of ice that separated them from the outside. You see hundreds of them looking drenched and wet, disoriented, probably not knowing where they are and what they are supposed to do. You, however, know exactly what to do.\n Moving swiftly through the crowd, you try to find the two people you care about most. You bump straight into a tall, gangly elf with big rounded glasses. For a second, he looks as confused as all the others, but then he recognizes you and you share the warmest hug you have ever shared. After you make sure Aluin is okay, relatively speaking, you continue your way through the crowd. You have to go far into the back of the tunneled cave to finally find him. He looks drenched, just like the other ones, but way less confused. Nic looks at you and you too share a warm hug. Moving swiftly through the crowd, you try to find the two people you care about most. You bump straight into a tall, gangly elf with big rounded glasses. For a second, he looks as confused as all the others, but then he recognizes you and you share the warmest hug you have ever shared. After you make sure Aluin is okay, relatively speaking, you continue your way through the crowd. You have to go far into the back of the tunneled cave to finally find him. He looks drenched, just like the other ones, but way less confused. Nic looks at you and you too share a warm hug. This is at least what she told us. It was quite weird, sharing your mind with so many other people. You do become very open-minded, literally speaking, since your thoughts are all shared inside the Receptacle. Over time, I also learned to control it, together with some friends I made inside there. I was sabotaging the witch where I could, resisting going to pick you up, leading her on false tracks so she wouldn’t be able to get to you.” You interjected “The winter diamonds. She said we were marked ones. She told our parents it would be a good omen to put the flower inside our cribs for good health, but it was a marker.” “Yes”, Nic replied “Never trust a Glacier witch is what they told you at the Academy, right? At least that’s what Aluin told me after the witch kidnapped him as well. Honestly, I was hoping you would come here someday and save us. I knew you could do it. In the meanwhile, I kept myself busy and learned a few magic tricks. The figurines for example, they are all mine. I got the ice elementals to place them on every porch that didn’t have a present on it yet on the day of the Snow Festival. I told them to put one on your porch as well. Oh and sorry for poking around in your memories earlier. During the first phase of attaching a soul to the Receptacle people typically relive random memories until they lose themselves in them, but I tried to guide you through the relevant memories tied to me, Aluin or the witch so you’d remember why you were here and that you needed to wake up.” You talk some more, until you notice the crowd of people growing concerned, some already starting to head out into the mountains on their own. “I think we need to get those people somewhere safe, Nic. We should get them all to Telos.” “Agreed, I’ll come with you, but I won’t stay long. I’m sure this Receptacle was not the only one out here. There must be more people trapped like me and I swore to myself if I ever did get out again, that I would find others in need and rescue them, just like I was rescued.” You look at Nic, with a body looking no more than 8 years old, but being a much older, braver soul than anyone could imagine. You escort the people back to Telos and spend the rest of your winter holidays managing operations at the newly founded Taskforce for Missing People at the Academy until every single person is brought back home and can be reunited with their loved ones. It was a truly magical holiday season.", 
+        "image":"item2.png",
+        "image_width":"18%"
     }
 
 ]

@@ -29,6 +29,7 @@ class Calender extends Component {
           shorttitle={door.shorttitle}
           contentmain={door.contentmain}
           image={door.image}
+          image_width={door.image_width}
         />
       ) : door.doorType === 3 ? (
         <DoorEncounter
