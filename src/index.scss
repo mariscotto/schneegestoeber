@@ -261,7 +261,7 @@ h3 {
   background-color: var(--bg_blue);
   float: right;
   border-radius: 0 10px 10px 0;
- transition: all 1.5s ease-out;
+  transition: all 1.5s ease-out;
   transform-origin: bottom left; 
   padding-right:15px;
   overflow-y:auto;
@@ -270,8 +270,8 @@ h3 {
   input,
   div {
     background-color: var(--bg_blue);
-    color: Var(--bg-color-card);
-  animation: type 2s steps(60, end); 
+    color: var(--bg-color-card);
+    animation: type 2s steps(60, end); 
   }
 }
 
