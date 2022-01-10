@@ -9,7 +9,7 @@ var today = new Date(),
 
 class Calender extends Component {
   render() {
-    var list = doors.slice(0, date).map((door, index) => {
+    var list = doors.slice(0, 25).map((door, index) => {
       return door.doorType === 1 ? (
         <DoorStory
           key={index}
