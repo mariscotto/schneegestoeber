@@ -4,8 +4,8 @@ import DoorStory from "./DoorStory.js";
 import DoorItem from "./DoorItem.js";
 import DoorEncounter from "./DoorEncounter.js";
 
-var today = new Date(),
-  date = today.getDate();
+/**var today = new Date(),
+  date = today.getDate(); **/
 
 class Calender extends Component {
   render() {
