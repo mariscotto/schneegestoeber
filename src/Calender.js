@@ -38,6 +38,9 @@ class Calender extends Component {
           shorttitle={door.shorttitle}
           contentmain={door.contentmain}
           contentadditional={door.contentadditional}
+          contentadditionalTake={door.contentadditionalTake}
+          contentadditionalLeave={door.contentadditionalLeave}
+          image={door.image}
         />
       ) : (
         <DoorStory />

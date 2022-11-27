@@ -13,6 +13,15 @@ export default function Door(props) {
     return [value, setValue];
   }
 
+  function sendToCapsule() {
+    console.log(props.contentadditionalTake);
+  }
+
+  function takeWith() {
+    console.log(props.shorttitle);
+  }
+
+
   const isActivestore = "isActivestore" + props.shorttitle;
   const [isActive, setActive] = useStickyState(true, isActivestore);
 
@@ -23,7 +32,8 @@ export default function Door(props) {
   const showResultsstore = "showResultsstore" + props.shorttitle;
   const [showResults, setShowResults] = useStickyState(false, showResultsstore);
 
-  const Results = () => <p>{props.contentadditional}</p>;
+  const Take = () => <div><p>{props.contentadditionalTake}</p> <img src={props.image} alt="item" ></img></div>;
+  const Leave = () => <p>{props.contentadditionalLeave}</p>;
 
   return (
     <div class="calender">
@@ -37,11 +47,36 @@ export default function Door(props) {
       </div>
       <div className={isActive ? "doorContentEmpty" : "doorContent"}>
         <p>{props.contentmain}</p>
-        <p class="link" onClick={() => setShowResults(true)}>
-          Show encounter
-        </p>
-        {showResults ? <Results /> : null}
+
+        <button
+              type="button"
+              className="rollButton"
+              onClick={() => {
+                sendToCapsule();
+                setShowResults(false);
+              }}
+              >
+              Send to capsules
+        </button>
+        <button
+              type="button"
+              className="rollButton"
+              onClick={() => {
+                takeWith();
+                setShowResults(true);
+              }}
+              >
+              Take to control room with you
+        </button>
+        {showResults ? <Take /> : <Leave />}
       </div>
     </div>
   );
 }
+
+/*
+<p class="link" onClick={() => setShowResults(true)}>
+Show encounter
+</p>
+{showResults ? <Results /> : null}
+-->*/

@@ -61,7 +61,9 @@
         "title":"All living things",
         "shorttitle":"7",
         "contentmain":"You open the second present. Inside it, you see a long, purple tongue. Before you can fully come to terms with the contents of the present, you feel a sharp sting in your right hand that is holding the top of the bag. Suddenly you realize the bag has developed a line of long, sharp teeth around its opening. You are attacked by a mimic.",
-        "contentadditional":"The struggle is short but it leaves you with some nasty bruises and bite marks. In the end, you defeat the mimic and are left with a destroyed present bag on the porch of your parents’ place [you gain one level]. You step over the mess of the destroyed mimic and walk through the front door."
+        "image":"1.png",
+        "contentadditionalTake":"I'm taking you with me!",
+        "contentadditionalLeave":"Go to the capsules!"
     },
     {
         "doorType": 1,
@@ -117,7 +119,10 @@
         "title":"Bitter coldness",
         "shorttitle":"13",
         "contentmain":"A battle takes place between you and the creature.",
-        "contentadditional":"You got hurt, and the pain feels real. In the end, you destroy the ice elemental and it shatters into a million harmless pieces of ice [you gain one level]. As you sit down, exhausted, and watch the pile of ice for a few seconds, just in case it makes any unexpected movement, you discover a flower on a small heap just behind where you destroyed the ice elemental."
+        "contentadditional":"You got hurt, and the pain feels real. In the end, you destroy the ice elemental and it shatters into a million harmless pieces of ice [you gain one level]. As you sit down, exhausted, and watch the pile of ice for a few seconds, just in case it makes any unexpected movement, you discover a flower on a small heap just behind where you destroyed the ice elemental.",
+        "image":"1.png",
+        "contentadditionalTake":"I'm taking you with me!",
+        "contentadditionalLeave":"Go to the capsules!"
     },
     {
         "doorType": 2,
@@ -181,7 +186,10 @@
         "title":"The Glacier witch",
         "shorttitle":"20",
         "contentmain":"A battle takes place between you and the witch.",
-        "contentadditional":"The witch immediately starts to giggle, then cackle. “You human children always amuse me, you truly do.” She turns around, her silvery horns shining in the candlelight and her grimace sending shivers down your back. “I’ve been trying for years to get to you, my lovely marked one, and over the years, I got hold of everyone of my marked ones, except for you. And now, you are the one coming to me, unannounced, breaking into my home, and making demands. Enjoy your sleep. When you’ll wake up, you’ll be at the Court of the Prince and you’ll be his servant, for the rest of your life.” A big fight ensued, where you trashed her entire cottage, spilled her brew, got burned, frozen, paralysed and much more. In the end, you plunged your weapon through her heart and under her breath she muttered “The Receptacle, it will avenge me. You can’t save them, any of them.” before succumbing to her wounds [you gain one level]. Exhausted, but more determined than ever to find Aluin, you walk out of the cottage, with dark blue blood all over you."
+        "contentadditional":"The witch immediately starts to giggle, then cackle. “You human children always amuse me, you truly do.” She turns around, her silvery horns shining in the candlelight and her grimace sending shivers down your back. “I’ve been trying for years to get to you, my lovely marked one, and over the years, I got hold of everyone of my marked ones, except for you. And now, you are the one coming to me, unannounced, breaking into my home, and making demands. Enjoy your sleep. When you’ll wake up, you’ll be at the Court of the Prince and you’ll be his servant, for the rest of your life.” A big fight ensued, where you trashed her entire cottage, spilled her brew, got burned, frozen, paralysed and much more. In the end, you plunged your weapon through her heart and under her breath she muttered “The Receptacle, it will avenge me. You can’t save them, any of them.” before succumbing to her wounds [you gain one level]. Exhausted, but more determined than ever to find Aluin, you walk out of the cottage, with dark blue blood all over you.",
+        "image":"1.png",
+        "contentadditionalTake":"I'm taking you with me!",
+        "contentadditionalLeave":"Go to the capsules!"
     },
     {
         "doorType": 1,
@@ -218,7 +226,10 @@
         "title":"The Ice Monster of Many Faces",
         "shorttitle":"24",
         "contentmain":"A battle takes place between you and the ice monster",
-        "contentadditional":"At first, you are somewhat hesitant to fight the monster. You see so many faces of people trapped inside it, you don’t want to risk hurting them. After a while, you start to notice some of the faces inside the ice splinters of the monster look exactly like some of the people trapped inside the ice blocks on the cave walls. Anyway, you have little choice, if you do not weaken the monster quickly, it will kill you, or worse. You don’t want to end up in an ice block. The fight is hard and drawn-out. It is as if the monster knows all the tricks of the witch and also the ice elementals and executes them perfectly. You think back to your training, do everything by the book and improvise here and there, until the ice monster is finally destroyed. With one clean swoop of your weapon, you slide into the monster, breaking it in half. There is an explosion of energy and for a second, all you can see is white light, and all you can hear is a buzzing coming from everywhere and nowhere at the same time."
+        "contentadditional":"At first, you are somewhat hesitant to fight the monster. You see so many faces of people trapped inside it, you don’t want to risk hurting them. After a while, you start to notice some of the faces inside the ice splinters of the monster look exactly like some of the people trapped inside the ice blocks on the cave walls. Anyway, you have little choice, if you do not weaken the monster quickly, it will kill you, or worse. You don’t want to end up in an ice block. The fight is hard and drawn-out. It is as if the monster knows all the tricks of the witch and also the ice elementals and executes them perfectly. You think back to your training, do everything by the book and improvise here and there, until the ice monster is finally destroyed. With one clean swoop of your weapon, you slide into the monster, breaking it in half. There is an explosion of energy and for a second, all you can see is white light, and all you can hear is a buzzing coming from everywhere and nowhere at the same time.",
+        "image":"1.png",
+        "contentadditionalTake":"I'm taking you with me!",
+        "contentadditionalLeave":"Go to the capsules!"
     },
     {
         "doorType": 2,
