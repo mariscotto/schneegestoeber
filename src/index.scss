@@ -31,10 +31,10 @@ code {
   --red: #F3514E;
 
   --dp04: #242424;
+  --dp05: #140e4d;
   --bg_blue: #090a11;
   /* #1E1D2B, #252736, #1B1F30 */
-  --line: #fffffff;
-
+  --line: #ffffff;
   --border-color: #ffffff;
 }
 
@@ -53,19 +53,80 @@ code {
  
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: var(--line); 
+  background: var(--dp05); 
   border-radius: 10px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #b30000; 
+  background: var(--bg_blue); 
+}
+
+
+@media (max-width: 800px) {
+  .top_row {
+    flex-direction: column;
+    gap:30px;
+    margin-bottom:30px;
+  }
+
+  .character_link {
+    align-items: center!important;
+    padding:5%;
+  }
+
+  .character {
+    width:100%!important;
+  }
+
+  .line {
+    width:100%!important;
+  }
+
+  .door{
+    width:80%!important;
+  }
+
+  .roll{
+    flex-direction: column;
+    width:100%!important;
+  }
+
+  .rollCheck {
+    width: 100%!important;
+    margin-bottom: 2%;
+  }
+
+  .rollDescription{
+    width:100%!important;
+  }
+
+  .rollButton {
+    margin-top:10%;
+    margin-right:0!important;
+    width: 100%;
+    padding:10px 20px!important;
+  }
+
+  .rollNumber{
+    width: auto!important;
+  }
+
+  .roll input{
+    width:30px!important;
+    height:30px;
+  }
+
+  .doorOpen hr {
+    width:100%!important;
+  }
 }
 
 #background {
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-size:cover
+  background-size:cover;
+  width:fit-content;
 }
 
 p,
@@ -81,7 +142,7 @@ a {
 }
 
 #grid {
-  display: grid;
+  display: initial;
   margin: 0.5% 5%;
 }
 
@@ -98,6 +159,7 @@ a {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding: 0 10%;
 }
 
 .character {
@@ -106,7 +168,7 @@ a {
   border: none;
   cursor: pointer;
   letter-spacing: 0.5rem;
-  font-size: larger;
+  /*font-size: larger;*/
   text-transform: uppercase;
   width: 40%;
   margin: 0;
@@ -156,9 +218,9 @@ input {
   display: flex;
   flex-direction: column;
   /*background-color: var(--bg_blue); */
-  width: 30%;
+  width: 80%;
   border-radius: 10px;
-  transform-origin: top left;
+  transform-origin: center;
   transition: all 1s ease-in-out;
   cursor: pointer;
   border: 1px solid var(--primary-color);
@@ -206,14 +268,14 @@ input {
   height:45vh;
   width: 7%;
   transition: all 1s ease-in-out;
-  transform-origin: top left;
+  transform-origin: center;
   display: flex;
   flex-direction: column;
  /* background-color: var(--bg_blue); */
- color: #fff;
- background-color: rgba(255,255,255,0.06);
- border: 1px solid rgba(255,255,255,0.1);
- backdrop-filter: blur(10px);
+  color: #fff;
+  background-color: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.1);
+  backdrop-filter: blur(10px);
   border-radius: 10px 0 0 10px;
   padding:0 20px;
 
@@ -261,14 +323,16 @@ h3 {
 }
 
 .icons {
-  height: 22vh;
+  max-height: 22vh;
   /*background-color: var(--bg_blue); */
   margin: auto;
   padding: 5%;
+  max-width: 80%;
+  height: auto;
 }
 
 .calender {
-  margin-top: 3%;
+  margin:3% 3%;
   display: flex;
 }
 
@@ -294,7 +358,7 @@ h3 {
   backdrop-filter: blur(10px);
   float: right;
   border-radius: 0 10px 10px 0;
-  transition: all 1.5s ease-out;
+  transition: all 1.5s ease-in-out;
   transform-origin: top left; 
   padding:0 15px;
   overflow-y:auto;
@@ -359,7 +423,6 @@ h3 {
     backdrop-filter: blur(30px);
     color: rgba(255,255,255,0.8);
     border-radius: 3px;
-    border: 2px solid var(--line);
     width: 20px;
     cursor: pointer;
   }
@@ -381,7 +444,6 @@ h3 {
 }
 
 .rollButton {
-  width: 10%;
   margin-right: 5%;
   color: var(--primary-color);
   /*background-color: var(--bg-blue);*/
@@ -431,7 +493,7 @@ h3 {
 
 .footer {
   margin-top: 100px;
-  background-color: var(--bg_blue);
+  background-color: var(--dp05);
   align-items: center;
   flex-direction: column;
   display: flex;
