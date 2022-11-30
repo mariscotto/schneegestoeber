@@ -1,15 +1,16 @@
 import React, { Component } from "react";
 import doors from "./doorconfig/doors.json";
 import DoorStory from "./DoorStory.js";
+import DoorStoryNI from "./DoorStoryNI.js";
 import DoorItem from "./DoorItem.js";
 import DoorEncounter from "./DoorEncounter.js";
 
-/**var today = new Date(),
-  date = today.getDate(); **/
+var today = new Date(),
+date = today.getDate();
 
 class Calender extends Component {
   render() {
-    var list = doors.slice(0, 25).map((door, index) => {
+    var list = doors.slice(0, date).map((door, index) => {
       return door.doorType === 1 ? (
         <DoorStory
           key={index}
@@ -41,6 +42,13 @@ class Calender extends Component {
           contentadditionalTake={door.contentadditionalTake}
           contentadditionalLeave={door.contentadditionalLeave}
           image={door.image}
+        />
+      ) : door.doorType === 4 ? (
+        <DoorStoryNI
+          key={index}
+          title={door.title}
+          shorttitle={door.shorttitle}
+          contentmain={door.contentmain}
         />
       ) : (
         <DoorStory />

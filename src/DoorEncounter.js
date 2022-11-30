@@ -32,7 +32,7 @@ export default function Door(props) {
   const showResultsstore = "showResultsstore" + props.shorttitle;
   const [showResults, setShowResults] = useStickyState(false, showResultsstore);
 
-  const Take = () => <div><p>{props.contentadditionalTake}</p> <img src={props.image} alt="item" ></img></div>;
+  const Take = () => <div><p>{props.contentadditionalTake}</p> <img src={props.image} alt="item" class="image_encounter"></img></div>;
   const Leave = () => <p>{props.contentadditionalLeave}</p>;
 
   return (

@@ -1,118 +1,104 @@
 [
     {
-        "doorType": 1,
+        "doorType": 4,
         "title":"Beginnings",
         "shorttitle":"1",
-        "contentmain":"You are a student at the Hero Academy in Telos, the capital of the Vaasa region. Yesterday, Dec. 23 of the year 1045, your best friend at the academy, Aluin, an elven sorcerer, disappeared after going off to search the Bottomless Bogs for ingredients to make a potion for his final graduation project. The next day, he still hadn’t returned so you went out to look for him. You picked up his trail in the Bottomless Bogs, which first led you across Mirror Lake and the Great Glacier, and eventually brought you to a mountain cave in the Titan Peaks. As you began to explore the cave, something hit you in the back of the head and you passed out. Slowly, you wake up again… You feel a cold hardwood floor underneath you, a strangely familiar feeling. You smell freshly baked cinnamon cookies and the smell alone fills you with warmth and memories from your childhood. A cold breeze is coming from somewhere and it’s as if a single snowflake just fell on your nose. You feel dizzy and like your head is about to explode. It takes you a while to completely open your eyes and look around. This is confusing, weren’t you just somewhere in an ice cave high up in the mountains? Your memory since leaving your dorm room at the Academy this morning is a bit foggy and the more you try to recall what exactly happened, the stronger your headache gets. The room you are in right now looks almost exactly like your old room back at your parents’ home, a farmhouse near the village Avang. There is the closet, the old baby crib, the hand-drawn paintings of your mum on the wall, as well as the calendar and clock right by the door.",
-        "roll":"Wisdom saving throw", 
-        "contentadditional1":"You are captivated by your surroundings and every detail floods your senses. You think about how all this can be real but also, how could it possibly not be?",
-        "contentadditional2":"You are sure this is not real. Not real as in, this is not where your actual, living body is right now. It feels like one of those dreams of a distant dream that your mind constructs but you instantly forget when you wake up.",
-        "contentadditional3":"You’ve seen some powerful illusions during your time at the Hero Academy. The room you are in right now is not real, it’s a powerful, incredibly accurate illusion recreating events from the past.",
-        "contentadditional4":"You’ve seen some powerful illusions during your time at the Hero Academy. The room you are in right now is not real, it’s a powerful, incredibly accurate illusion recreating events from the past. But there’s more behind it. It’s like somebody is poking around in your brain trying to access your memories. Who is it and why is this happening to you?"
+        "contentmain":"You wake up in your bed, an alarm blaring in your ears. Turning around to your right side, you partly open your eyes to read the digital clock on your desk. Barely 4 hours of sleep. If that idiot Garrett incorrectly handled the mechanism for the outside lock again, he will be assigned an extra shift to make up for all the lost hours of sleep for sure. After all, you’re the captain of this mission, and you get to assign your crew’s shifts. Quickly, you get up and walk to the sink, and as you splash a bit of water on your face, the alarm stops momentarily, only to pick up after a second or so of silence. A female voice coming from the speakers in your cabin says with a very calm tone “Self-destruction sequence initiated. Please evacuate to the IVS capsules or the surface rover at your earliest convenience. You have - 30 - minutes to evacuate."
     },
     {
         "doorType": 2,
-        "title":"Just like home",
+        "title":"Wake up call",
         "shorttitle":"2",
-        "contentmain":"You take a closer look at the calendar. The day marked there is “24.12.1025”. This is the day you were born, on the day of the Snow Festival, a day every child in Vaasa looks forward to because there are lots of celebrations in town and kids traditionally get presents from the Yule Father put in front of their doors. The mythical Yule Father is said to reside somewhere in the Titan Peaks. You move to the crib, almost expecting a small version of yourself lying in there. The crib is empty, except for a beautiful ice blue flower with star-shaped petals and a strange, sparkling glow. It looks like one of those rare flowers that grow in the mountains. You don’t remember its name at the moment, but you have seen it before, for sure. Finally, you go to the closet and open it. None of your childhood clothes are hanging there, instead, your adult-sized armor, as well as all the weapons you started your rescue expedition with, are hanging neatly from the rack. Right, you need to find Aluin. You don’t know what this craziness means, but you know getting Aluin back is what counts. There are two options now, going out of the door or the open window. Almost as if guided by an invisible force, you move towards the door and open it. You now have access to your weapons and armor in your inventory.", 
+        "contentmain":"Shit. Who the hell initiated self-destruction?! Okay, think quick. The protocol has to have been initiated in the control room, so it will have to be turned off there. But wait, what if it was not triggered by mistake? That question will certainly be answered on your way to the control room by one of your four crew members. You change as quickly as you can into your station clothes, grab some essential equipment, and move to the door of your cabin.", 
         "image":"item2.png",
-        "image_width":"100px"
+        "image_width":"30%"
     },
     {
-        "doorType": 1,
-        "title":"Wishlist",
+        "doorType": 4,
+        "title":"Slimy business",
         "shorttitle":"3",
-        "contentmain":"As soon as you leave the room, the door slams shut behind you. You step into another room that, again, looks and feels just like the one in your childhood home. Some of the furniture changed, the crib was replaced with a small bed and the calendar is also new. On a small desk, you notice some pieces of paper lying around. Intrigued by what is written on them, you pick one up. At the top of the paper, it says “Wishlist Snow Festival and birthday 1030”. Below, there is a list of items a younger version of you apparently wished for.",
-        "roll":"Intelligence ability check", 
-        "contentadditional1":"You gave few thoughts to your wish list and wrote down the first things that came to your mind.",
-        "contentadditional2":"You've given some thought to your wish list and you've come up with some things you want.",
-        "contentadditional3":"The other day, a merchant selling magical artifacts came to the farm for the first time. He said he's traveling around the region this year in the month before the Snow Festival. So you quickly wrote your wish list and listed only the best magic artifacts you could think of. ",
-        "contentadditional4":"The other day, a merchant selling magical artifacts came to the farm for the first time. He said he's traveling around the region this year in the month before the Snow Festival. So you quickly wrote your wish list and listed only the best magic artifacts you could think of. But which item on the wishlist do you desire the most?"
-    },
-    {
-        "doorType": 2,
-        "title":"Surprise!",
-        "shorttitle":"4",
-        "contentmain":"After you studied the list, you hear knocking coming from the door opposite of you (not the one you came from). For a moment, you stop and feel unsure about what to do. Then, as if moved by the invisible force you already felt earlier, you move towards the door and open in. Right in front of the door, you find a present wrapped in a red bag and decorated with a thin yellow string. You open it and find exactly what was written on your wishlist.", 
-        "image":"item2.png",
-        "image_width":"100px"
+        "contentmain":"As soon as your door to the main hallway is opened, you can smell it even before you see it: There is a slimy, sticky green substance almost completely covering the floor. You place a handkerchief in front of your nose, but with limited success in keeping unwelcomed smells out. The slime makes it extremely hard to move around in the hallway, and as your boots are getting more and more held back by lumps of green substance, you make a hard decision: a small detour to the Shower Room, just a couple of doors down the hallway, and you might get the cleaning device to get rid of this mess. You hope it will make it quicker for you to get to the control room and deactivate the self-destruction sequence. Moving closer to the Shower Room makes you think, why is this happening now? You just recently solved this issue, it was an outside fungus that entered the station through the vents. But you and your crew closed up that hole a week ago. Uncertain, you stand in front of the Shower Room and pull the handle."
     },
     {
         "doorType": 1,
-        "title":"The disappearance",
-        "shorttitle":"5",
-        "contentmain":"Again, the door you just walked through slams shut behind you. The room you are standing in feels like your old childhood room, but a much more recent version of it. There are holiday decorations mounted on the walls and cards from your favorite card game as a kid are scattered on the floor. In fact, it was not really your favorite card game, it was Nicolay’s favorite game to play. Nicolay was your best friend for the first couple of years of school. You got along great and had lots of fun and adventures around the countryside. Your and Nic’s birthday was even on the same day, the day of the Snow Festival. Still, as fun as Nic was, he could be as stubborn as a rock sometimes. You crouch down to pick up the cards from the floor and as you look at the calendar, you suddenly remember exactly what happened that day. You and Nic were playing cards and had a discussion about the Yule Father, as you typically do when you’re 8 years old. It all turned into a big fight, however, since Nic insisted that the Yule Father actually exists, while you knew that merchants were bringing the presents for the kids in the valley and leaving them on the front porch, instead of some mythical creature. Nic got terribly upset and left the room, slamming the door behind him. You remember what happened afterward, and rush to the door at the opposite side of the room, flinging it wide open. Just like it happened so many years ago you rush down the stairs, right through the living room and the front door.",
+        "title":"Cleaning duty",
+        "shorttitle":"4",
+        "contentmain":"The door to the Shower Room opens up, and you step inside. The cleaner is right next to the door in a narrow cupboard, you open it as quickly as you can and get the device out of the charging station. Should be enough to get you through the mess in the hallway.", 
         "roll":"Perception ability check", 
-        "contentadditional1":"There is no sign of Nic however and the cold winter breeze howling over the countryside is starting to turn into a blizzard. You sigh and remember, just like it happened on the day Nic would vanish forever.",
-        "contentadditional2":"You see small footprints in the fresh snow, leading from your house towards the Bottomless Bogs. After a couple of meters however, there is no trace of your friend. You look outside and shout his name, but still no sign of Nic.  And now the cold winter breeze howling over the countryside is starting to turn into a blizzard. You sigh and remember, just like it happened on the day Nic would vanish forever.",
-        "contentadditional3":"You see a small silhouette running out to the fields. Nic is now out the front door, and you just manage to stop it from slamming as well. Nic runs into the fields toward the Bottomless Bogs, shouting “I'll prove it to you yet!” As he enters the swamp, a cold breeze picks up and it begins to snow. You run after Nic, calling out for him, but you don't find him in the snow fall that quickly develops to be more of a blizzard. You wander around aimlessly until you reach the point where you entered the swamp again, see your house and head back towards home, just like it happened on the day Nic would vanish forever.",
-        "contentadditional4":"You see a small silhouette running out to the fields. Nic is out the front door, and you just manage to stop it from slamming as well. Nic runs into the fields toward the Bottomless Bogs, shouting “I'll prove it to you yet!” As he enters the swamp, a cold breeze picks up and it begins to snow. You run after Nic, calling out for him, but you don't find him in the snow fall that quickly develops to be more of a blizzard. You wander around aimlessly until you reach the point where you entered the swamp again and see your house. As you take one last look over your shoulder at the Bottomless Bog, you see the outline of a humanoid figure that looks like an old woman bending over a young boy looking up at her. With the next gust of wind, the figures disappear. You head back to the house, just like it happened on the day Nic would vanish forever."
+        "contentadditional1":"You take a quick glance around the room, but you notice nothing out of the ordinary. The light is turned off, so you don’t expect any of your crew there. Without looking back, you head into the hallway.",
+        "contentadditional2":"While you grab the cleaner, you notice a couple of dark red spots on one of the shower cubicle walls. Taking a quick look around, you don’t notice anything else out of the ordinary. Might be Monica having a nosebleed again. Without looking back, you head into the hallway.",
+        "contentadditional3":"While you grab the cleaner, you notice a couple of dark red spots on one of the shower cubicle walls. You push back the shower curtain and sure enough, there is a puddle of dark red liquid on the floor, and yes, it seems to be blood. This doesn’t look good, you need to get to your crew mates quickly. Without looking back, you head into the hallway.",
+        "contentadditional4":"While you grab the cleaner, you notice a couple of dark red spots on one of the shower cubicle walls. You push back the shower curtain and sure enough, there is a puddle of dark red liquid on the floor, and yes, it seems to be blood. Suddenly, you get an overwhelming feeling of nausea. You remember, as if you saw pictures, how you were vomiting blood in the bathtub yesterday evening. Disturbed by this sudden flashback, you head into the hallway."
     },
     {
         "doorType": 2,
-        "title":"Presents",
+        "title":"The east wing",
+        "shorttitle":"5",
+        "contentmain":"You get to the cleaning. Not having much time, you start by pushing the substance out of the way and try making a clear route down the hallway. Josey’s room is the closest one, it’s right at the beginning of the east wing, so you decide to first make your way there. You’ll have to pass the section door. Maybe you’re in luck and the fungus didn’t spread further than your section. You’re about to find out, as you turn left you see the big door connecting the main building to the east wing with the laboratory. As you are about to hold your hand to the finger print scanner, you notice an object trapped beneath another lump of green slime. It’s your raygun, the beretta. How did that one get there?", 
+        "image":"item3.png",
+        "image_width":"50%"
+    },
+    {
+        "doorType": 1,
+        "title":"Beretta 21A",
         "shorttitle":"6",
-        "contentmain":"As you reach the front porch of your house, you notice two bags on the porch. They are wrapped as you would traditionally wrap presents in Vaasa, with golden and red strings. You don’t remember them being there the night Nic disappeared. Even though you know you should open the door and go inside, you feel a weird desire to open both presents, immediately. You open the first one and find a Viola inside.", 
-        "image":"item6.jpg",
-        "image_width":"20%"
+        "contentmain":"Carefully, you pry the gun out from under the sticky green lump. Disgusting. Simply disgusting. Holding the gun in your hand your first thought is how in the world it possibly got there. It was his personal gun, custom built to fit perfectly in his hands and most importantly, not usable if you didn’t have the exact chip you have implanted into your skin last year.", 
+        "roll":"Wisdom ability check", 
+        "contentadditional1":"As you start thinking where you put the gun last time you held it, the alarm blares again: “You have - 20 - minutes to evacuate”. Right. No need to overthink this. Holster the gun, find Josey. You step through the door and enter the east wing.",
+        "contentadditional2":"This might just be a strange coincidence. Might have fallen out of some pocket. Or not. Hard to say. You decide to stay alert for more strange coincidences, as you step through the door and enter the east wing.",
+        "contentadditional3":"You remember running down the hallway yesterday evening. Your memories are foggy, as if it was a dream, but you have a distinct memory of your steps echoing down this exact hallway. And you were sweating profusely. Something went wrong, and you lost your gun. Weird how you don’t really remember what happened before and after though. In any case, you have to move forward, you think as you step through the door and enter the east wing.",
+        "contentadditional4":"You remember running down the hallway yesterday evening. Your memories are foggy, as if it was a dream, but you have a distinct memory of your steps echoing down this exact hallway. And you were sweating profusely. Something went wrong, and you decided to drop your gun, which is something you would hardly do in normal circumstances. In any case, you have to move forward, you think as you step through the door and enter the east wing."
+    },
+    {
+        "doorType": 4,
+        "title":"Priorities",
+        "shorttitle":"7",
+        "contentmain":"Fortunately, the fungus didn’t reach the east wing yet, so your way is clear. The door to your left is open, it’s josey’s bedroom. A quick glance into the room makes you realize it was left disheveled, clothes on the floor and several drawers left open.  No sign of Josey however. Of course, after all it’s her. No way Josey would leave without getting as many of her test results as possible. You’ll have to drag her out of that damn laboratory you realize as you walk towards the large door at the end of the corridor."
     },
     {
         "doorType": 3,
-        "title":"All living things",
-        "shorttitle":"7",
-        "contentmain":"You open the second present. Inside it, you see a long, purple tongue. Before you can fully come to terms with the contents of the present, you feel a sharp sting in your right hand that is holding the top of the bag. Suddenly you realize the bag has developed a line of long, sharp teeth around its opening. You are attacked by a mimic.",
-        "image":"1.png",
-        "contentadditionalTake":"I'm taking you with me!",
-        "contentadditionalLeave":"Go to the capsules!"
-    },
-    {
-        "doorType": 1,
-        "title":"The box in the attic",
+        "title":"Josey",
         "shorttitle":"8",
-        "contentmain":"The door you just walked through slams shut. On the other side of the door, you don’t see the living room you would have expected to be there, but, again, your old room. On the walls, you see drawings of famous heroes, people you idolized when you were a teenager. Looking at the calendar you realize that the disappearance of your best friend was already four years ago. Everyone was looking for Nic for a long time that evening and for several weeks following his disappearance but he was never found. Still, you never gave up hope of finding him again. On your desk, you see an old, ornamented and fairly small chest. You recognize the chest and think you even remember the day you found it. You had just moved some of your old childhood things into the attic and there you found an old box with a note on it. On the note, there was your name written on it. You had never seen this chest before so you brought it down to your room and put it on the desk, where it rests now, right in front of you. You step closer and open it.",
-        "roll":"Investigation ability check", 
-        "contentadditional1":"The first thing you find in the chest are a bunch of letters. Unfortunately, the letters are so old and yellowed that you can no longer read them properly.",
-        "contentadditional2":"The first thing you find in the chest are a bunch of letters. The letters are correspondences between your parents and a woman named 'Boginia'. They don’t seem to have anything to do with you though. You are confused as to why your name was written on the note.",
-        "contentadditional3":"The first thing you find in the chest are a bunch of letters. The letters are correspondences between your parents and a woman named 'Boginia'. She apparently advised them to put a Winter Diamond flower in their baby's crib as a good omen for the health of the offspring. Your parents took the advice and shortly after, you were born.",
-        "contentadditional4":"The first thing you find in the chest are a bunch of letters. The letters are correspondences between your parents and a woman named 'Boginia'. She apparently advised them to put a Winter Diamond flower in their baby's crib as a good omen for the health of the offspring. Your parents took the advice and shortly after, you were born. The letters Boginia wrote are written in a strange spidery script. Because of the writing and her choice of words, you would guess that Boginia is one of the glacial witches who lives in the Titan Peaks. You would guess that your parents, being regular farmers, suspected nothing bad of her, but you know glacier witches can't be trusted."
-    },
-    {
-        "doorType": 2,
-        "title":"The black book",
-        "shorttitle":"9",
-        "contentmain":"Inside the chest, beneath all the letters, you also find a book with a leathery, black cover. As you open the book, you notice the pages are all empty. As you turn the pages, a pressed flower falls out of a page. You pick it up and inspect it. It’s the same flower you found in your old crib earlier today. Now you remember the name: it’s a Winter Diamond flower. They don’t grow in a lot of places but a common spot to find them is usually high up in the mountains. You put the flower in your backpack and the invisible force you already noticed before guides your gaze towards the door on the closer side of the room. Of course, you move towards it and open it.", 
-        "image":"item9.jpg",
-        "image_width":"18%"
+        "contentmain":"You open the laboratory door and find Josey standing over a large pile of documents, as she is stuffing another pile of documents into a backpack. She turns around abruptly as you approach her, placing your hand softly on her shoulder you say “Josey, what are doing? We have to get out of here or deactivate the self-destruction sequence. Either way, there is no time for this right now, we need to get going.”. She sighs, grabs the backpack next to her and says “What’s the plan captain?”",
+        "image":"doctor.png",
+        "contentadditionalTake":"“Come with me, we’re heading to the control room.” Josey nods and straps the backpack on. “Lead the way” she says, as you both turn to leave the laboratory.",
+        "contentadditionalLeave":"“Looks like you already got enough documents for years of further research. You need to evacuate, get to the IVS capsules and save yourself.” Josey nods, and you can see a bit of hesitance in her eyes. But still, she straps the backpack on and simply says “Got it. Will do. See you back at the main ship.”. As she steps out of the laboratory door, she stops and says “Good luck, captain”, before quickly vanishing into the corridor."
     },
     {
         "doorType": 1,
-        "title":"Leaving home",
-        "shorttitle":"10",
-        "contentmain":"Again, you’re in your room, but this one is the most recent version of it. In fact, it’s the way you remember your room to look like as you left to move to Telos City to start your studies at the Academy. A quick glance at the calendar confirms this. The day of the Snow Festival, 1043. All your things are packed in chests and bags. After the holiday, your parents would escort you to the Academy on the big horse-drawn cart. This meant a big change, of course, one that would come with lots of opportunities, but also dangers and insecurities. You didn’t quite know what to expect back then, but you know your parents were very anxious about it. They had been anxious about you ever since the day Nic disappeared in the blizzard. Recently, however, they became a bit more relaxed, as your features started to turn more into those of an adult, and you became a reliable and much-appreciated help on the farm. As you walk through the room you remember the stress of those days and how you tried thinking about everything before you left.",
-        "roll":"Survival ability check", 
-        "contentadditional1":"That, of course, failed. You did remember to pack some things. You forgot many others, your toothbrush, your belt, your winter coat, among other things. Thinking about how many times you had to travel from the Academy and back, just to get all your stuff together, brings a smile to your face. Your parents weren’t too sad about it, it just meant they saw you more often, which they, secretly, really appreciated.",
-        "contentadditional2":"Indeed, you did remember to pack the most important things. All the other stuff you needed were just commonly sold items you eventually bought on campus. This is actually how you met Aluin. He also had to buy a bunch of things he forgot to bring from his elven home.",
-        "contentadditional3":"Indeed, you thought of everything, but in the end, you also packed way too many things. In the first couple of weeks, your room at the Academy was full with stuff you didn’t really need. However, this lead you to being able to help out lots of your fellow students with things they forgot. This is actually how you met Aluin. He was freaking out because he forgot his crystal ball at home and it would have taken weeks for it to arrive if they sent it to the Academy. You felt very sorry for the tall, gangly elf with big, rounded glasses and lent him your crystal ball, a gift you once got from a traveling elven merchant.",
-        "contentadditional4":"Indeed, you thought of everything, and left anything you didn’t need at home. You even thought of having a yard sale of all the things you knew you didn’t need anymore. A lot of these were child games you used to play a lot but don’t anymore. Among these were the set of playing cards that were Nic’s favorite. You had stopped for a moment before putting them on the “for sale” table outside in the yard. There was a soft breeze picking up in the yard that made the cards in your hand tremble. You heard a soft whisper “She’s not getting you, I promise” but as you turned around to identify where the whisper came from, you didn't see anybody in the yard. "
+        "title":"Scars and stitches",
+        "shorttitle":"9",
+        "contentmain":"Just as you were about to leave the laboratory, you notice a bunch of dirty surgical instruments strewn chaotically on a small table. Josey didn’t say anything about them, she seemingly didn’t notice.", 
+        "roll":"Investigation ability check", 
+        "contentadditional1":"The dirt on the instruments is dried already. Must have been a small thing and Josey forgot to clean up afterwards. Happens. You certainly have more pressing things to worry about now. You continue back to the main section of the building.",
+        "contentadditional2":"From the type of instruments lying on the table, it seems as if somebody was trying to stich something up, like closing up a wound. Anyway, no time to worry about these things. You continue back to the main section of the building.",
+        "contentadditional3":"From the type of instruments lying on the table, it seems as if somebody was trying to stich something up, like closing up a wound. Probably used for something like a larger scratch or a bigger tear in the skin. Seems like whoever used it just didn’t clean up properly behind themselves. Someone must have been in a hurry, and it surely wasn’t Josey, she would always put her things in the proper place. Still, continuing back to the main section of the building seems like the best option now, so you move ahead.",
+        "contentadditional4":"From the type of instruments lying on the table, it seems as if somebody was trying to stich something up, like closing up a wound. Suddenly, you notice a pull in your lower belly. Carefully, you lift your shirt and sure enough, you see a horizontal wound that is nicely stitched up. Another memory lifts itself from your foggy mental reservoir. You stitched it up yourself, last night, in this room. How did this even happen? You’re unsure, but you decide to continue back to the main section of the building anyway."
     },
     {
         "doorType": 2,
-        "title":"Frozen Flames",
+        "title":"Just in case",
+        "shorttitle":"10",
+        "contentmain":"Before leaving the east wing to head further in the direction of your next crew mate, Colin, you stop next to one of the cases with emergency vitality serums [health potion] and take out one syringe filled with bubbly green liquid. You can’t know what lies ahead. But you might as well come prepared.",
+        "image":"item4.png",
+        "image_width":"100px"
+    },
+    {
+        "doorType": 4,
+        "title":"Weak spot",
         "shorttitle":"11",
-        "contentmain":"Back in the room with the chests and bags on moving day, you feel as if you have seen enough in this room and you move forward to open the door. On the other side, you step outside into the yard belonging to the farmhouse. As the door slams shut, you feel the cold winter air piercing through your clothes. You hear the girls from the neighbor’s farm playing and singing Snow Festival songs in the distance. On the porch, you notice a small present. It is wrapped in paper of an icy blue color. You remember these kinds of presents very well. They started appearing on the porch of people’s homes in the valley some time ago, always on the day of the Snow Festival, as tradition required. However, these presents were very different from the ones the merchants were distributing up to that point. You pick the present up and open it, tearing the wrapping paper carefully apart. Inside, you find a figurine that looks like the typical depiction of Father Yule, with a long beard and a big bag over his shoulder. The figurine is about the size of your hand and cold to the touch. It looks as if it were made of ice but your body heat doesn’t seem to affect it. It doesn’t melt any bit when you hold it in your hands. Inside of the figurine, there is what looks like a flame twirling around the hollowed-out statue, almost as if it performed an intricate dance to break free of its icy prison. You smile, thinking of all the kids who had received the figurines that year, each one was different but with the same twirling flame inside. You had asked your parents about this figurine and said you were probably a bit too old to receive gifts on the porch this year. Your parents were confused and swore they hadn’t bought it for you. Must have been a merchant who felt especially charitable then or maybe the figurines were advertisements for a new magic show in town? You put the figurine in your backpack and go back inside through the front door.", 
-        "image":"item2.png",
-        "image_width":"18%"
+        "contentmain":"Moving further down the hallway as quickly as you can, you notice one of the smaller wall panels has a dent. And there is the green fungus slowly oozing out of it. So this could be how the fungus got in, interesting. You take a moment to examine the panel. Looks like someone could have just bumped against it. The outer mantle of the station is not in the best shape anymore, there could be all sorts of alien lifeforms trying to get in just waiting for a weak spot like that. "
     },
     {
         "doorType": 1,
         "title":"The Bottomless Bogs",
         "shorttitle":"12",
-        "contentmain":"You step through the front door and find yourself not in a room, but in the middle of what looks like the Bottomless Bogs. Surprised, you turn back around to where you just heard the door slam shut behind you. There is no door. It’s just you, standing in the open field in the Bogs in the middle of the night. You almost can’t believe it. Everything, the stars, the trees, the sounds of the Bog critters, everything feels exactly like it did the morning before sunrise when you started your expedition to find Aluin. Was it this morning? A day ago? A week ago? You are not sure anymore. In front of you, you see a trail of footsteps in the snow. They have the same size and shape as your footsteps. You’ve been here before, exactly where you started. You feel frustration and anger flare up inside of you with the memory of losing Nic being so recently revived. What is it anyway with your best friends disappearing on the same day, the Snow Festival, your birthday, yours and Nic’s birthdays? Is it some kind of sick joke? What is this? You scream into the night Where the fuck am I? Aluin? Nic? The mountain cave. What the hell did you find in it, a cave troll, a powerful illusionist, death itself? As you send clouds of warm breath into the freezing cold air, you feel as isolated and alone as never before. You don’t notice something wrapping their cold hands around your ankle until it yanks you down and you fall to the ground.",
-        "roll":"Strength saving throw", 
-        "contentadditional1":"You desperately try to escape the grip, but can’t. A flash of pain shoots through your leg. Take 1d4 bludgeoning damage.",
-        "contentadditional2":"You desperately try to escape the grip, but can’t. Whatever is holding you is much stronger than you.",
-        "contentadditional3":"You desperately try to escape the grip, but can’t. Instead of flailing around, you try to regain composure, just as they taught you at the Academy, and identify your attacker. It almost looks like a shambling cluster of shards of ice. Very sharp shards of ice that are now moving quickly towards you.",
-        "contentadditional4":"You desperately try to escape the grip, and land a kick right on whatever grabbed hold of your ankle. You see a cluster of ice shards shambling on the snow. You hurt it, but it seems to regroup quickly and grow into a full-sized ice elemental."
+        "contentmain":"While looking closely at the dented panel, you almost don’t notice the turquoise bug-like creature crawling out of the green slime. With its six legs, it jumps at you and lands straight on your chest. You feel its teeth burying themselves in your skin.",
+        "roll":"Dexterity saving throw", 
+        "contentadditional1":"It’s hard for you to get a hold of the stupid thing before it attaches itself to you. You howl in pain, but can manage to get the thing off of you. The bug jumps back to the dent in the wall and disappears before you can catch it. -1d8 piercing damage",
+        "contentadditional2":"It’s hard for you to get a hold of the stupid thing, it keeps crawling all over you and nibbles here and there. Eventually, you catch it before it drops to the ground, so you can quickly stomp it dead. -1d4 piercing damage",
+        "contentadditional3":"Your reaction is quite quick. You end up catching it before it drops to the ground, so you can quickly stomp it dead.",
+        "contentadditional4":"In one swift motion, you get it off of you and smash it on the wall. Between the slimy, sticky substance, the remains of the turquoise bug aren’t even that noticeable."
     },
     {
         "doorType": 3,
